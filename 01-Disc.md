@@ -1,4 +1,4 @@
-[#](#) Disks 
+# Disks 
 
 ## Motherboard firmware - BIOS, EFI and UEFI
 
