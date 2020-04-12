@@ -21,13 +21,6 @@ fzf_srch_history() {
 }
 zle -N fzf_search_history fzf_srch_history
 ```
-
-	  
-	  
-  dfdASFSDF
-  FASDFASD
-	  
-	  
 	  
 * 
 
@@ -108,4 +101,3 @@ read someParam
 # Questions
 
 * Builtin documentations? 
-
