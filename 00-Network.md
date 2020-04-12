@@ -12,13 +12,13 @@ TCP/IP can be considered as condensed version of OSI:
 
 ## OSI
 
-* Layer 7 (Application): Most of what the user actually interacts with is at this layer. Web browsers and other internet-connected applications (like Skype or Outlook) use Layer 7 application protocols.
+* Layer 7 (Application): Most of what the user actually interacts with is at this layer. Web browsers and other internet-connected applications (like Skype or Outlook) use Layer 7 application protocols. Protocols SSH
 * Layer 6 (Presentation): This layer converts data to and from the Application layer. In other words, it translates application formatting to network formatting and vice versa. This allows the different layers to understand each other.
-* Layer 5 (Session): This layer establishes and terminates connections between devices. It also determines which packets belong to which text and image files.
-* Layer 4 (Transport): This layer coordinates data transfer between system and hosts, including error-checking and data recovery.
-* Layer 3 (Network): This layer determines how data is sent to the receiving device. It’s responsible for packet forwarding, routing, and addressing.
-* Layer 2 (Data Link): Translates binary (or BITs) into signals and allows upper layers to access media.
-* Layer 1 (Physical): Actual hardware sits at this layer. It transmits signals over media.
+* Layer 5 (Session): This layer establishes and terminates connections between devices. It also determines which packets belong to which text and image files. Protocols 
+* Layer 4 (Transport): This layer coordinates data transfer between system and hosts, including error-checking and data recovery. Protocols TCP
+* Layer 3 (Network): This layer determines how data is sent to the receiving device. It’s responsible for packet forwarding, routing, and addressing. Protocols IP
+* Layer 2 (Data Link): Translates binary (or BITs) into signals and allows upper layers to access media. Protocols PPP
+* Layer 1 (Physical): Actual hardware sits at this layer. It transmits signals over media. Cables, hubs and so on
 
 # VPN
 
