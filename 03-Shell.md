@@ -1,4 +1,4 @@
-# Zsh
+[#](#) Zsh
 
 You can get whole list of keywords with type
 `whence -wm '*'`(shows what shell knows - commands, functions, reserved words..)
@@ -21,6 +21,13 @@ fzf_srch_history() {
 }
 zle -N fzf_search_history fzf_srch_history
 ```
+
+	  
+	  
+  dfdASFSDF
+  FASDFASD
+	  
+	  
 	  
 * 
 
@@ -101,3 +108,4 @@ read someParam
 # Questions
 
 * Builtin documentations? 
+
