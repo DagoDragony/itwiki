@@ -1,4 +1,3 @@
-!notify-send %:p:h
 :cd %:p:h
 silent! !git pull > /dev/null
 :e!
