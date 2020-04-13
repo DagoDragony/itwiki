@@ -7,6 +7,14 @@ You can get whole list of keywords with type
 
 trap, limit/unlimit
 
+### vared
+
+Lets edit variables in line
+```
+array=('one' 'two' 'three')
+vared array
+```
+
 ## Commands
 
 `which -a ls` - shows ls path and that ls actually is alias
@@ -86,9 +94,6 @@ for (( i = 1; i <= 10; i++ )); do
  print ${(l:10::X::Y:)goo} ${(r:10::X::Y:)goo}
 done
 ```
-foo=one && print ${(l:10::X::Y:)foo}
-XXXXXXYone
-```
 
 ```
 foo=one && print ${(r:l:10::X::Y:)foo}
@@ -98,6 +103,8 @@ XXXXXXYone
 Bang history - !! returns last command
 typset var='value in function' - after function restores var value or removes it if the wasn't any before
 read someParam
+
+
 
 # testing
 
