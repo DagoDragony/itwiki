@@ -75,14 +75,14 @@ File descriptors
 ### Modifiers
 
 ```
-	* $#foo - foo string length
-	% foo=/usr/bin/cat
-	% print ${foo:h}
-	/usr/bin
-	% print ${foo:t}
-	cat
-	% print /usr/bin/cat(:t)
-	cat 
+$#foo - foo string length
+% foo=/usr/bin/cat
+% print ${foo:h}
+/usr/bin
+% print ${foo:t}
+cat
+% print /usr/bin/cat(:t)
+cat 
 ```
 
 ### Conditional substitutions
