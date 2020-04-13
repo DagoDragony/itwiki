@@ -25,9 +25,16 @@ vared array
 Function that can be binded to keys
 ```
 fzf_srch_history() {
-		command echo $(history)
+	command echo $(history)
 }
 zle -N fzf_search_history fzf_srch_history
+
+
+accept-line() {
+	print -n "\e]2;Executing $BUFFER\a"
+	zle .accept-line
+}
+zle -N accept-line
 ```
 
 `zle -lL` - list all widgets
