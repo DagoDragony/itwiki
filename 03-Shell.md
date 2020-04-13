@@ -73,7 +73,8 @@ File descriptors
 ## Substitutions
 
 ### Modifiers
-
+:h
+:t
 ```
 $#foo - foo string length
 % foo=/usr/bin/cat
@@ -83,6 +84,12 @@ $#foo - foo string length
 cat
 % print /usr/bin/cat(:t)
 cat 
+```
+```
+% array=('a bar of chocolate' 'a bar of barflies' 
+  array> 'a barrier of barns')
+  % print ${array:s/bar/car/}
+  a car of chocolate a car of barflies a carrier of barns
 ```
 
 ### Conditional substitutions
