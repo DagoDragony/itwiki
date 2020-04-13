@@ -85,6 +85,7 @@ cat
 % print /usr/bin/cat(:t)
 cat 
 ```
+string substitution
 ```
 % array=('a bar of chocolate' 'a bar of barflies' 
   array> 'a barrier of barns')
