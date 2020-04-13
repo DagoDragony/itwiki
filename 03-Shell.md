@@ -21,8 +21,8 @@ vared array
 
 ## Functions
 
-Widgets - all actions in the editor are performed by 'widgets. A widgets job is simply to perform some small action.
-Only widgets can be binded to keys
+### Widgets
+Function that can be binded to keys
 ```
 fzf_srch_history() {
 		command echo $(history)
