@@ -82,6 +82,10 @@ File descriptors
 
 ### Modifiers
 
+
+
+### Conditional substitutions
+
 * print ${foo-bar} - use foo value if foo is set or use "bar"
 * print ${foo:-bar} - use foo value if it's non zero string, else "bar"
 * print ${foo:=bar} - use foo, but if it's not set before using set it to "bar"
@@ -106,10 +110,15 @@ two three four
 4
 
 % array=(se vuol ballare signor contino)
-% print ${array[(r)s*]} # search, r - first match from left, R - first from rigth
+% print ${array[(r)s*]} # search: r - first match from left, R - first from rigth
 se
 
+% array=(se vuol venire nella mia scuola)
+% print ${array[(i)v*]} # get index: i from left, I from right
+2
+
 ```
+
 
 ## Flags
 
