@@ -85,13 +85,29 @@ cat
 % print /usr/bin/cat(:t)
 cat 
 ```
-string substitution
+array substitution
 ```
 % array=('a bar of chocolate' 'a bar of barflies' 
   array> 'a barrier of barns')
   % print ${array:s/bar/car/}
   a car of chocolate a car of barflies a carrier of barns
 ```
+
+pattern substitution
+```
+foo='where I was huge lizards walked here and there'
+
+% print -l ${(S)foo#h*e} ${(S)foo##h*e} ${(S)foo%h*e} ${(S)foo%%h*e}
+wre I was huge lizards walked here and there
+w
+where I was huge lizards walked here and tre
+where I was huge lizards walked here and t
+```
+1st - matches first he and returns what is left without it
+2nd - matches longest part from first h to final e, returns what is left
+3rd - searches from end and mathes 'he' in the end, returns what is left
+
+you can get the match instead of part that is left with M flag
 
 ### Conditional substitutions
 
