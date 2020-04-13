@@ -80,11 +80,36 @@ File descriptors
 
 ## Substitutions
 
+### Modifiers
+
 * print ${foo-bar} - use foo value if foo is set or use "bar"
 * print ${foo:-bar} - use foo value if it's non zero string, else "bar"
 * print ${foo:=bar} - use foo, but if it's not set before using set it to "bar"
 * print ${foo:+bar} - if foo is set use bar, else use foo value abscense
 * print ${@:?some message like missing file name} - if param not set print the message and exit shell
+
+### Process substitutions
+
+### Parameter substitution
+
+```
+% array=(one two three four)
+% print ${array}
+one two three four
+% print ${array[3]}
+three
+% print ${array[2,-1]}
+two three four
+
+% array=(one two three four)
+% print $#array
+4
+
+% array=(se vuol ballare signor contino)
+% print ${array[(r)s*]} # search, r - first match from left, R - first from rigth
+se
+
+```
 
 ## Flags
 
