@@ -49,14 +49,6 @@ zle -N accept-line
 * variables
 	* putting $ before variable is called parameter expansion(sometimes called substitution)
 * modifiers `:h`, `:t` etc more 'man zshexpn' modifiers section.
-	* $#foo - foo string length
-	`% foo=/usr/bin/cat`
-	`% print ${foo:h}`
-	/usr/bin
-	`% print ${foo:t}`
-	cat
-	`% print /usr/bin/cat(:t)`
-	cat 
 * Prompts
 	* `$PS1` - default interactive shell prompt 
 	* `$PS2` - is shown when the shell is waiting for some more input
@@ -82,7 +74,16 @@ File descriptors
 
 ### Modifiers
 
-
+```
+	* $#foo - foo string length
+	% foo=/usr/bin/cat
+	% print ${foo:h}
+	/usr/bin
+	% print ${foo:t}
+	cat
+	% print /usr/bin/cat(:t)
+	cat 
+```
 
 ### Conditional substitutions
 
