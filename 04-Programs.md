@@ -4,7 +4,7 @@
 
 sudo pacman -S cronie
 crontab -l # list crontabs
-crontab -e # edit crontabs
+crontab -ie # edit crontabs(interactive)
 crontab -r # remove crontabs
 
 
@@ -12,3 +12,5 @@ crontab -r # remove crontabs
   21  01  *   *   * /usr/bin/systemctl hibernate
   @weekly           $HOME/.local/bin/trash-empty
   01 * * * * /bin/echo Hello, world! # runs every hour on first minute
+
+* * * * * notify-send "Test every minute" "$(date)"
