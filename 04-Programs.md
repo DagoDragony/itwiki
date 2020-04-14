@@ -14,3 +14,6 @@ crontab -r # remove crontabs
   01 * * * * /bin/echo Hello, world! # runs every hour on first minute
 
 * * * * * notify-send "Test every minute" "$(date)"
+
+run-parts -v /etc/cron.hourly
+
