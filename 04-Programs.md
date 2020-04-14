@@ -15,6 +15,7 @@ crontab -r # remove crontabs
   @weekly           $HOME/.local/bin/trash-empty
   01 * * * * /bin/echo Hello, world! # runs every hour on first minute
   * * * * * notify-send "Test every minute" "$(date)"
+  * * * * *  XDG_RUNTIME_DIR=/run/user/$(id -u) notify-send Hey "this is dog!"
 ```
 
 
