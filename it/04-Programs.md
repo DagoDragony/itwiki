@@ -32,6 +32,12 @@ Task spooler
 `tsp -c <jobId>` - lists output of tsp job with id jobId
 `tsp -C` - clear finished jobs
 
+Examples
+```
+tsp echo hello # for simple statement
+tsp sh -c 'notify-send "tsp test"' # more complicated scripts should run like sh -c or similar
+```
+
 ### Multiple queue lists
 
 Give environment variable any path and run command(each time with TS_SOCKET defined).
@@ -45,5 +51,4 @@ TS_SOCKET=/tmp/shorttask/ tsp echo C
 TS_SOCKET=/tmp/shorttask/ tsp # list that we created
 tsp # default list
 ```
-
 
