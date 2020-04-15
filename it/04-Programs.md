@@ -27,10 +27,12 @@ for testing part:
 
 Task spooler
 
-* `tsp echo hello` - registers task for echo hello command
-* `tsp` - lists all jobs
-* `tsp -c <jobId>` - lists output of tsp job with id jobId
-* `tsp -C` - clear finished jobs
+```
+tsp echo hello # registers task for echo hello command
+tsp # lists all jobs
+tsp -c <jobId> # lists output of tsp job with id jobId
+tsp -C # clear finished jobs
+```
 
 Examples
 ```
