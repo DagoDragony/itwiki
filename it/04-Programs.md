@@ -22,3 +22,28 @@ crontab -r # remove crontabs
 for testing part:
 `run-parts -v /etc/cron.hourly` - run jobs manually
 `cronnext -cl` - print jobs and when next run will be
+
+## Tsp
+
+Task spooler
+
+`tsp echo hello` - registers task for echo hello command
+`tsp` - lists all jobs
+`tsp -c <jobId>` - lists output of tsp job with id jobId
+`tsp -C` - clear finished jobs
+
+### Multiple queue lists
+
+Give environment variable any path and run command(each time with TS_SOCKET defined).
+This way it will create separate task list, which you can see when TS_SOCKET is specified.
+Default `TS_SOCKET` is $TMPDIR/socket-ts.[uid]
+```
+TS_SOCKET=/tmp/shorttask/ tsp echo A
+TS_SOCKET=/tmp/shorttask/ tsp echo B
+TS_SOCKET=/tmp/shorttask/ tsp echo C
+
+TS_SOCKET=/tmp/shorttask/ tsp # list that we created
+tsp # default list
+```
+
+
