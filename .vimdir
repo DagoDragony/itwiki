@@ -2,3 +2,4 @@
 silent! !git pull | xargs -0 notify-send "Git pull %:p:t"
 :e!
 autocmd! BufWritePost * silent! !git add .;git commit -m "vim autocommit" > /dev/null; git push > /dev/null; notify-send "Autocommited" %:p:h &
+
