@@ -1,3 +1,5 @@
+# Vimwiki
+
 <nmb><leader>ww - open vimWiki
 <leader>wd - delete wiki page U are in
 <leader>wr - rename wiki page U are in

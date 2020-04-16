@@ -1,6 +1,8 @@
 [Vimwiki](Vimwiki)
 
 # fzf
+
+```
 ^r - search in history
 ^t - fzf search in current directory
 cd **<tab> - fzf autocomplete
@@ -12,9 +14,31 @@ unset **<tab>
 export **<tab>
 unalias **<tab>
 fzf --preview 'cat {}' - fzf search with preview, can be used any editor including nvim
+```
 
 # vim
-:s/^/# - comment
-:s/^#/ - uncomment
-<< unindent
->> indent
+
+```
+:s/^/# " comment
+:s/^#/ " uncomment
+<< " unindent
+>> " indent
+```
+
+# various
+
+```
+tar -xvf <fileToExtract> -C <whereToExtract> - extract archive to specific folder
+```
+
+```
+xclip -sel clip id_rsa.pub - copy file content to clipboard
+```
+
+```
+pacman -Ql package_name - list files belonging to package
+pacman -Syu
+pacman -u file.tar.gz (install from package)
+pacman -Qo file // find to which package file belongs
+```
+
