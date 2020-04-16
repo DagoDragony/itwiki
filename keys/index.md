@@ -41,4 +41,3 @@ pacman -Syu
 pacman -u file.tar.gz (install from package)
 pacman -Qo file // find to which package file belongs
 ```
-
