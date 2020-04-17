@@ -58,3 +58,4 @@ tsp # default list
 
 map/unmap
 noremap - no recursive mappings
+verbose map - includes information where the key was defined
