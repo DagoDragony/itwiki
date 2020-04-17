@@ -54,3 +54,7 @@ TS_SOCKET=/tmp/shorttask/ tsp # list that we created
 tsp # default list
 ```
 
+## Vim keys
+
+map/unmap
+noremap - no recursive mappings
