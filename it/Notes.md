@@ -25,3 +25,6 @@ x-scheme-handler/magnet=torrent.desktop;
 application/x-bittorrent=torrent.desktop;
 ```
 
+`xdg-mime query default image/png`
+
+`/usr/share/mime`
