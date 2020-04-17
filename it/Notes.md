@@ -16,7 +16,15 @@ Name=Torrent
 Exec=/usr/bin/env transadd %U
 ```
 
-`sudo update-desktop-database -v`
+for the default applications set new *.desktop file to mimeapps.list
+`~/.config/mimeapps.list`
+
+```
+[Default Applications]
+x-scheme-handler/magnet=torrent.desktop;
+application/x-bittorrent=torrent.desktop;
+```
+??? `sudo update-desktop-database -v`
 
 
 
