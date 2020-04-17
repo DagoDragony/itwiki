@@ -24,6 +24,7 @@ for the default applications set new *.desktop file to mimeapps.list
 x-scheme-handler/magnet=torrent.desktop;
 application/x-bittorrent=torrent.desktop;
 ```
+
 ??? `sudo update-desktop-database -v`
 
 
