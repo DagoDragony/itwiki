@@ -4,6 +4,7 @@
 
 aliases
 forgit and fzf
+try diff-so-fancy
 
 ## Desktop files
 
