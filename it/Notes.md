@@ -2,6 +2,7 @@
 
 ## Git
 
+
 aliases
 forgit and fzf
 try diff-so-fancy
@@ -29,3 +30,6 @@ application/x-bittorrent=torrent.desktop;
 `xdg-mime query default image/png`
 
 `/usr/share/mime`
+
+
+
