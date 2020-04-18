@@ -41,3 +41,14 @@ pacman -Syu
 pacman -u file.tar.gz (install from package)
 pacman -Qo file // find to which package file belongs
 ```
+
+# snippets
+
+`cbl` - code block
+`ilc` - inline cod
+`*` - italic
+`**` - block
+`sec` - h1 header
+`ssec` - h2 header
+`sssec` - h3 header
+`<C-R>` - finish with snippet editing
