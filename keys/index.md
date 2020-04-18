@@ -24,6 +24,11 @@ fzf --preview 'cat {}' - fzf search with preview, can be used any editor includi
 << " unindent
 >> " indent
 <leader>n - fzf open file
+<C-p> - NERDTreeToggle
+<F3> - NERDTreeToggle
+cs"' - change surounding " with '
+ds" - remove surounding "
+<leader>f - Goyo toggle
 ```
 
 # various
