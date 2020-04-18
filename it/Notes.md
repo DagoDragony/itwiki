@@ -31,5 +31,15 @@ application/x-bittorrent=torrent.desktop;
 
 `/usr/share/mime`
 
-lorem
-2020-04-17 21:30
+## Snippets UltiSnips
+
+Vimwiki sets for markdown file type of vimwiki, so other plugins don't recognise file as markdown
+and snippets are not loaded
+
+`:set filetype?` - get filetype
+Settings needed to recognise filetype
+`filetype on`
+`filetype plugin on`
+`filetype indent on`
+`:filetype` - to check file type recognision settings
+
