@@ -1,4 +1,7 @@
+# Key bindings
+
 [Vimwiki](Vimwiki)
+[Vim ide](Vim-ide)
 
 # fzf
 
