@@ -3,32 +3,32 @@
 # fzf
 
 ```
-^r - search in history
-^t - fzf search in current directory
-cd **<tab> - fzf autocomplete
-ssh **<tab> - fzf autocomplete
-rm ^t - fzf you can select multiple files to delete
-git add ^t - fzf autocomplete
+^r # search in history
+^t # fzf search in current directory
+cd **<tab> # fzf autocomplete
+ssh **<tab> # fzf autocomplete
+rm ^t # fzf you can select multiple files to delete
+git add ^t # fzf autocomplete
 kill -9 <tab>
 unset **<tab>
 export **<tab>
 unalias **<tab>
-fzf --preview 'cat {}' - fzf search with preview, can be used any editor including nvim
+fzf --preview 'cat {}' # fzf search with preview, can be used any editor including nvim
 ```
 
 # vim
 
 ```
-:s/^/# " comment
-:s/^#/ " uncomment
-<< " unindent
->> " indent
-<leader>n - fzf open file
-<C-p> - NERDTreeToggle
-<F3> - NERDTreeToggle
-cs"' - change surounding " with '
-ds" - remove surounding "
-<leader>f - Goyo toggle
+:s/^/#    " comment
+:s/^#/    " uncomment
+<<        " unindent
+>>        " indent
+<leader>n " fzf open file
+<C-p>     " NERDTreeToggle
+<F3>      " NERDTreeToggle
+cs"'      " change surounding " with '
+ds"       " remove surounding "
+<leader>f " Goyo toggle
 ```
 
 # various
@@ -42,8 +42,8 @@ xclip -sel clip id_rsa.pub - copy file content to clipboard
 ```
 
 ```
-pacman -Ql package_name - list files belonging to package
-pacman -Syu
+pacman -Ql package_name # list files belonging to package
+pacman -Syu # download fresh copy of master package database and upgrade every package 
 pacman -u file.tar.gz (install from package)
 pacman -Qo file // find to which package file belongs
 ```
