@@ -39,13 +39,13 @@ ds"       " remove surounding "
 ```
 tar -xvf <fileToExtract <whereToExtract> # extract archive to specific folder
 xclip -sel clip id_rsa.pub               # copy file content to clipboard
-```
 
-```
 pacman -Ql package_name " list files belonging to package
 pacman -Syu             " download fresh copy of master package database and upgrade every package
 pacman -u file.tar.gz   " install from package
 pacman -Qo file         " find to which package file belongs
+
+cat * | grep -v "^$" | grep -v "^\`" | grep -v "^#" | grep -v "^\["
 ```
 
 # snippets
