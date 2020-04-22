@@ -61,3 +61,6 @@ sssec " h3 header
 <C-R> " finish with snippet editing
 ```
 
+# sbt
+
+`sbt "whatDependsOn com.adform.dp storm-commons-core" | less -R`
