@@ -10,4 +10,6 @@ gr - <Plug>(coc-references)
 <space>c - :CocCommand - list commands
 	metals.doctor-run checks if everything is compatible
 	TVP console - shows statuses of compilation etc
+<C-o> - previous cursor location
+<C-i> - forward to previous cursor position
 ```
