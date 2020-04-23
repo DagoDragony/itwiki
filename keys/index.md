@@ -17,6 +17,7 @@ unset **<tab>          #
 export **<tab>         #
 unalias **<tab>        #
 fzf --preview 'cat {}' # fzf search with preview, can be used any editor including nvim
+print -z "stsdth # puts argument onto the editing buffer stack
 ```
 
 # vim
