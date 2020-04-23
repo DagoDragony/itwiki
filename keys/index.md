@@ -65,3 +65,7 @@ sssec " h3 header
 # sbt
 
 `sbt "whatDependsOn com.adform.dp storm-commons-core" | less -R`
+`sbt provided:dependencyBrowseGraph`
+`sbt test:dependencyBrowseGraph`
+`sbt "inspect test:compile"`
+`sbt "inspect tree`
