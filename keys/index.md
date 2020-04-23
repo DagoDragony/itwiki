@@ -17,7 +17,7 @@ unset **<tab>          #
 export **<tab>         #
 unalias **<tab>        #
 fzf --preview 'cat {}' # fzf search with preview, can be used any editor including nvim
-print -z "stsdth # puts argument onto the editing buffer stack
+print -z "stsdth       # puts argument onto the editing buffer stack
 ```
 
 # vim
@@ -35,18 +35,27 @@ ds"       " remove surounding "
 <leader>f " Goyo toggle
 ```
 
+## recipies
+
+```
+vip     " select inner paragraph
+vipga = " mark current paragraph and align by =
+gaip  = " align inner pagragraph by =
+```
+
+
 # various
 
 ```
 tar -xvf <fileToExtract <whereToExtract> # extract archive to specific folder
 xclip -sel clip id_rsa.pub               # copy file content to clipboard
 
-pacman -Ql package_name " list files belonging to package
-pacman -Syu             " download fresh copy of master package database and upgrade every package
-pacman -u file.tar.gz   " install from package
-pacman -Qo file         " find to which package file belongs
+pacman -Ql package_name                  # list files belonging to package
+pacman -Syu                              # download fresh copy of master package database and upgrade every package
+pacman -u file.tar.gz                    # install from package
+pacman -Qo file                          # find to which package file belongs
 
-cat * | grep -v "^$" | grep -v "^\`" | grep -v "^#" | grep -v "^\["
+cat * | grep -v "^$"                     # exclude lines which start with dollar sign
 ```
 
 # snippets
@@ -65,7 +74,7 @@ sssec " h3 header
 # sbt
 
 `sbt "whatDependsOn com.adform.dp storm-commons-core" | less -R`
-`sbt provided:dependencyBrowseGraph`
+`sbt provided:dependencyBrowseGraph # not test only dependencyes and no provided ones`
 `sbt test:dependencyBrowseGraph`
 `sbt "inspect test:compile"`
-`sbt "inspect tree`
+`sbt "inspect tree" | less -R`
