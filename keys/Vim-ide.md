@@ -12,4 +12,7 @@ gr - <Plug>(coc-references)
 	TVP console - shows statuses of compilation etc
 <C-o> - previous cursor location
 <C-i> - forward to previous cursor position
+
+<leader>* " search for current word in files
+nmap gs " search for current selection
 ```
