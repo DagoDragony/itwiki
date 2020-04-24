@@ -56,6 +56,7 @@ pacman -u file.tar.gz                    # install from package
 pacman -Qo file                          # find to which package file belongs
 
 cat * | grep -v "^$"                     # exclude lines which start with dollar sign
+coproc (zathura "$booksFolder/$1 &)      # for running commmand as separate process
 ```
 
 # snippets
