@@ -15,4 +15,8 @@ gr - <Plug>(coc-references)
 
 <leader>* " search for current word in files
 nmap gs " search for current selection
+
+gcc - to comment out line
+gc - comment out target of motion
+gcap - comment out a paragraph
 ```
