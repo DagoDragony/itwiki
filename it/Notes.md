@@ -42,3 +42,4 @@ Settings needed to recognise filetype
 `filetype plugin on`
 `filetype indent on`
 `:filetype` - to check file type recognision settings
+
