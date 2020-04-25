@@ -13,6 +13,7 @@ gr - <Plug>(coc-references)
 <C-o> - previous cursor location
 <C-i> - forward to previous cursor position
 
+<leader>Shift* "
 <leader>* " search for current word in files
 nmap gs " search for current selection
 
