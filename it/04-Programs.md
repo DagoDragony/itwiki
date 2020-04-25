@@ -23,6 +23,7 @@ for testing part:
 `run-parts -v /etc/cron.hourly` - run jobs manually
 `cronnext -cl` - print jobs and when next run will be
 
+
 ## Tsp
 
 Task spooler
