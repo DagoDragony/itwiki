@@ -70,6 +70,8 @@ gcap - comment out a paragraph
 ]s " jump forward
 [s " jump backward
 z= " list suggested corrections
+zg " add current word to spell file
+zw " remove current word from spell file
 ```
 
 
