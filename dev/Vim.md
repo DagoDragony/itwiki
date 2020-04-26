@@ -16,6 +16,13 @@ Vim out of the box supports regional variations of English.
 :set spell
 :set spellang=en_us
 ```
+For specific professional jargon and terms separate files can be created
+```
+setlocal spelllang=en_us
+setlocal spellfile=~/.vim/spell/en.utf-8.add
+setlocal spellfile+=~/books/practical_vim/jargon.utf-8.add
+```
+
 
 
 
