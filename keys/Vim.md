@@ -59,6 +59,8 @@ gcap - comment out a paragraph
 <C-n> " triggers generic autocomplete or next in autocomplete
 <C-p> " triggers generic autocomplete or next in autocomplete
 <C-y> " accept selected autocomplete
+
+<C-x><C-f> " file autocompletion (fzf)
 ```
 ~/
 ## Various
