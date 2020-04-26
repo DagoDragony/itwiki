@@ -39,8 +39,12 @@ coproc (zathura "$booksFolder/$1 &)      # for running commmand as separate proc
 
 # sbt
 
-`sbt "whatDependsOn com.adform.dp storm-commons-core" | less -R`
-`sbt provided:dependencyBrowseGraph # not test only dependencyes and no provided ones`
-`sbt test:dependencyBrowseGraph`
-`sbt "inspect test:compile"`
-`sbt "inspect tree" | less -R`
+```
+sbt "whatDependsOn com.adform.dp storm-commons-core" | less -R
+sbt provided:dependencyBrowseGraph # not test only dependencyes and no provided ones
+sbt test:dependencyBrowseGraph
+sbt "inspect test:compile"
+sbt "inspect tree" | less -R
+
+sbt "~compile" # recompile on code change
+```

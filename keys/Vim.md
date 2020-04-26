@@ -16,9 +16,13 @@ sssec " h3 header
 ## recipies
 
 ```
-vip     " select inner paragraph
-vipga = " mark current paragraph and align by =
-gaip  = " align inner pagragraph by =
+vip         " select inner paragraph
+vipga =     " mark current paragraph and align by =
+gaip  =     " align inner pagragraph by =
+.,+3s/^.//g " substitute 3 lines forward - first match
+.,$s/^.//g  " substitute till the end
+%s/a/b/g    " substitute all lines
+1,10s/a/b/g " substitute 1 to 10 line
 ```
 
 ## Windows
