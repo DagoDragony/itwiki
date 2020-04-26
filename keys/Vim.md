@@ -55,6 +55,9 @@ nmap gs " search for current selection
 gcc - to comment out line
 gc - comment out target of motion
 gcap - comment out a paragraph
+
+<space>a - list all compilation errors
+<leader>ws - see expanded text of the line
 ```
 
 ## Autocompletion
