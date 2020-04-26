@@ -2,7 +2,6 @@
 
 [Vimwiki](Vimwiki)
 [Vim](Vim)
-[Vim ide](Vim-ide)
 
 # fzf
 
