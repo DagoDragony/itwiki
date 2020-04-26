@@ -58,6 +58,7 @@ gcap - comment out a paragraph
 ```
 <C-n> " triggers autocomplete or next in autocomplete
 <C-p> " triggers autocomplete or next in autocomplete
+<C-y> " accept selected autocomplete
 ```
 
 ## Various
