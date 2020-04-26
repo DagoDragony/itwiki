@@ -67,13 +67,13 @@ gcap - comment out a paragraph
 ## Spell Check
 
 ```
-]s " jump forward
-[s " jump backward
-z= " list suggested corrections
-zg " add current word to spell file
-zw " remove current word from spell file
+]s  " jump forward
+[s  " jump backward
+z=  " list suggested corrections
+zg  " add current word to spell file
+zw  " remove current word from spell file
+zug " revert zg or zw command for current word
 ```
-
 
 ## Various
 
