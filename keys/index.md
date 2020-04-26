@@ -1,6 +1,7 @@
 # Key bindings
 
 [Vimwiki](Vimwiki)
+[Vim](Vim)
 [Vim ide](Vim-ide)
 
 # fzf
@@ -20,28 +21,6 @@ fzf --preview 'cat {}' # fzf search with preview, can be used any editor includi
 print -z "stsdth       # puts argument onto the editing buffer stack
 ```
 
-# vim
-
-```
-:s/^/#    " comment
-:s/^#/    " uncomment
-<<        " unindent
->>        " indent
-<leader>n " fzf open file
-<C-p>     " NERDTreeToggle
-<F3>      " NERDTreeToggle
-cs"'      " change surounding " with '
-ds"       " remove surounding "
-<leader>f " Goyo toggle
-```
-
-## recipies
-
-```
-vip     " select inner paragraph
-vipga = " mark current paragraph and align by =
-gaip  = " align inner pagragraph by =
-```
 
 
 # various
@@ -57,19 +36,6 @@ pacman -Qo file                          # find to which package file belongs
 
 cat * | grep -v "^$"                     # exclude lines which start with dollar sign
 coproc (zathura "$booksFolder/$1 &)      # for running commmand as separate process
-```
-
-# snippets
-
-```
-cbl   " code block
-ilc   " inline cod
-*     " italic
-**    " block
-sec   " h1 header
-ssec  " h2 header
-sssec " h3 header
-<C-R> " finish with snippet editing
 ```
 
 # sbt

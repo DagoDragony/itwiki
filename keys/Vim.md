@@ -21,12 +21,16 @@ vipga = " mark current paragraph and align by =
 gaip  = " align inner pagragraph by =
 ```
 
+## Windows
+
+```
+<C>ww        " move to next vim window
+:sp [<file>] " horizontal split
+:vs [<file>] " vertical split
+```
+
+
 ## Various
-
-<C>ww - move to next vim window
-:sp [<file>] - horizontal split
-:vs [<file>] - vertical split
-
 
 ```
 :s/^/#    " comment
