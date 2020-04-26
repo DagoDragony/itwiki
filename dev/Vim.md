@@ -9,7 +9,7 @@
 
 ## Spell Check
 
-
+Vim out of the box supports regional variations of English.
 
 
 ## Mappings
