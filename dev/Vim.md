@@ -7,6 +7,11 @@
 * dictionary lookup
 * generic keywords
 
+## Spell Check
+
+
+
+
 ## Mappings
 
 `map/unmap`
