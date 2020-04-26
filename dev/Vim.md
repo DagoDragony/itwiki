@@ -1,4 +1,8 @@
-# Vim keys
+# Vim
+
+## Autocompletion
+
+## Mappings
 
 `map/unmap`
 `noremap` - no recursive mappings
