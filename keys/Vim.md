@@ -53,6 +53,13 @@ gc - comment out target of motion
 gcap - comment out a paragraph
 ```
 
+## Autocompletion
+
+```
+<C-n> " triggers autocomplete or next in autocomplete
+<C-p> " triggers autocomplete or next in autocomplete
+```
+
 ## Various
 
 ```
