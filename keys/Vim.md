@@ -62,6 +62,7 @@ gcap - comment out a paragraph
 <C-e>      " dismiss selection and restore to previous
 
 <C-x><C-f> " file autocompletion (fzf)
+<C-x><C-s> " trigger spell autocompletion
 ```
 
 ## Spell Check
@@ -71,6 +72,8 @@ gcap - comment out a paragraph
 [s  " jump backward
 z=  " list suggested corrections
 zg  " add current word to spell file
+1zg " add to first spell file
+2zg " add to second spell file(like professional jargon and similar)
 zw  " remove current word from spell file
 zug " revert zg or zw command for current word
 ```
