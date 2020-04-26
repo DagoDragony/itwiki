@@ -10,6 +10,13 @@
 ## Spell Check
 
 Vim out of the box supports regional variations of English.
+```
+:h spellang
+
+:set spell
+:set spellang=en_us
+```
+
 
 
 ## Mappings
