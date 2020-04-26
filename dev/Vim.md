@@ -2,6 +2,11 @@
 
 ## Autocompletion
 
+* filename
+* omni - similar to IntelliSense
+* dictionary lookup
+* generic keywords
+
 ## Mappings
 
 `map/unmap`
