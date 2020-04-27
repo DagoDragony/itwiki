@@ -55,7 +55,7 @@ Documentation can be added like `~/.local/share/nvim/site/doc/my-plugin/my-plugi
 `:helptags ~/.local/share/nvim/site/doc` - generate the local tags file 
 `:help local-additions` - list added documentation files
 
-### Functions
+### Functions and Variables
 
 ```
 function s:Add(from, correct)
@@ -66,5 +66,14 @@ endfunction
 ```
 
 * `s:` - local function
+* `b:` - buffer local 
 
+For mapping
 `<SID>` - can be used with mappings
+`<Plug>` - 
+
+### Library Script
+
+When you need some functions between multiple plugin, you can write script library
+`$VIMRUNTIME/library/mylibscript.vim`
+`call mylib#myfunction(arg)` - part before # must match script name
