@@ -33,3 +33,8 @@ Some mappings can be overrode by plugins etc. `verbose map` will show files wher
 In some cases plugins provide variables to enable/disable their mappings.
 If key is defined correctly, but it still does nothing, it's possible that some app intercepts key before vim.
 Next try could be `unmap/iunmap` - remove mapping and then add again
+
+## Vim plugin creation
+
+Plugin is nothing more than a vim script file that is loaded automatically.
+It can be done by putting vim file into plugin dir.
