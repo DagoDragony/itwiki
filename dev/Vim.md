@@ -38,3 +38,33 @@ Next try could be `unmap/iunmap` - remove mapping and then add again
 
 Plugin is nothing more than a vim script file that is loaded automatically.
 It can be done by putting vim file into plugin dir.
+
+Plugin types:
+* Global - used for all files
+  $VIMRUNTIME/plugin - user plugins
+  $VIMRUNTIME/macros - plugins comming with vim
+* Filetype plugin - used only for a specific type of file
+  $VIMRUNTIME/ftplugin
+
+File type plugins has special naming:
+ftplugin/<filetype>.vim
+ftplugin/<filetype>_<name>.vim
+ftplugin/<filetype>/<name>.vim
+
+Documentation can be added like `~/.local/share/nvim/site/doc/my-plugin/my-plugin-doc.txt`
+`:helptags ~/.local/share/nvim/site/doc` - generate the local tags file 
+`:help local-additions` - list added documentation files
+
+### Functions
+
+```
+function s:Add(from, correct)
+  let to = input("type the correction for " . a:from . ": ")
+  exe ":iabbrev " . a:from . " " . to
+
+endfunction
+```
+
+* `s:` - local function
+
+`<SID>` - can be used with mappings
