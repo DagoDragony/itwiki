@@ -60,6 +60,19 @@ gcap - comment out a paragraph
 <leader>ws - see expanded text of the line
 ```
 
+## Vimdiff
+
+```
+]c " next diff
+[c " previous diff
+do " diff obtain
+dp " diff put
+zo " open folded text
+zc " close folded text
+:diffupdate - re-scan the files for differences
+```
+
+
 ## Autocompletion
 
 ```
