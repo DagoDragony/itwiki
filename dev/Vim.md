@@ -72,6 +72,8 @@ For mapping
 `<SID>` - can be used with mappings
 `<Plug>` - 
 
+To call a function `:call myFunc()`
+
 ### Library Script
 
 When you need some functions between multiple plugin, you can write script library

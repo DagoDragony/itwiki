@@ -17,6 +17,7 @@ sssec " h3 header
 
 ```
 vip         " select inner paragraph
+viw         " select word
 vipga =     " mark current paragraph and align by =
 gaip  =     " align inner pagragraph by =
 .,+3s/^.//g " substitute 3 lines forward - first match
