@@ -6,6 +6,9 @@
 # fzf
 
 ```
+type for               # check what type is keyword
+`whence -wm '*'`       # shows what shell knows - commands, functions, reserved words..
+
 ^r                     # search in history
 ^t                     # fzf search in current directory
 cd **<tab>             # fzf autocomplete
