@@ -9,6 +9,8 @@
 type for               # check what type is keyword
 `whence -wm '*'`       # shows what shell knows - commands, functions, reserved words..
 
+packtree <libName>     #
+
 ^r                     # search in history
 ^t                     # fzf search in current directory
 cd **<tab>             # fzf autocomplete
@@ -35,6 +37,7 @@ pacman -Ql package_name                  # list files belonging to package
 pacman -Syu                              # download fresh copy of master package database and upgrade every package
 pacman -u file.tar.gz                    # install from package
 pacman -Qo file                          # find to which package file belongs
+pacman -Rdd <package_name>               # remove package, ignoring it's dependencies
 
 cat * | grep -v "^$"                     # exclude lines which start with dollar sign
 coproc (zathura "$booksFolder/$1 &)      # for running commmand as separate process
