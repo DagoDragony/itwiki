@@ -3,7 +3,7 @@
 [Vimwiki](Vimwiki)
 [Vim](Vim)
 
-# fzf
+## Fzf
 
 ```
 type for               # check what type is keyword
@@ -27,7 +27,7 @@ print -z "stsdth       # puts argument onto the editing buffer stack
 
 
 
-# various
+## Various
 
 ```
 tar -xvf <fileToExtract <whereToExtract> # extract archive to specific folder
@@ -43,7 +43,7 @@ cat * | grep -v "^$"                     # exclude lines which start with dollar
 coproc (zathura "$booksFolder/$1 &)      # for running commmand as separate process
 ```
 
-# sbt
+## Sbt
 
 ```
 sbt "whatDependsOn com.adform.dp storm-commons-core" | less -R
@@ -54,3 +54,13 @@ sbt "inspect tree" | less -R
 
 sbt "~compile" # recompile on code change
 ```
+
+## Zathura
+
+```
+:bmark <name>         " set or overwrite bookmark
+:blist                " list bookmarks
+:blist <bookmarkName> " go to specified bookmark
+<tab>                 " table of content
+```
+
