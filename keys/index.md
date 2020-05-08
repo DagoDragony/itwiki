@@ -41,6 +41,8 @@ pacman -Rdd <package_name>               # remove package, ignoring it's depende
 
 cat * | grep -v "^$"                     # exclude lines which start with dollar sign
 coproc (zathura "$booksFolder/$1 &)      # for running commmand as separate process
+
+echo "sth\nhello\n" | tr '\n' ' '        # translate(replace) all new lines with spaces
 ```
 
 ## Sbt
