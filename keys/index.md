@@ -25,6 +25,13 @@ fzf --preview 'cat {}' # fzf search with preview, can be used any editor includi
 print -z "stsdth       # puts argument onto the editing buffer stack
 ```
 
+## Logging
+
+```
+journalctl _COMM=<tab>
+man systemd.journal-fields # fields to match by
+```
+
 
 
 ## Various
