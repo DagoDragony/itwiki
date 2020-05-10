@@ -30,6 +30,7 @@ print -z "stsdth       # puts argument onto the editing buffer stack
 ```
 journalctl _COMM=<tab>
 man systemd.journal-fields # fields to match by
+systemctl list-units
 ```
 
 
