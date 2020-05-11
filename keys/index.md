@@ -25,13 +25,19 @@ fzf --preview 'cat {}' # fzf search with preview, can be used any editor includi
 print -z "stsdth       # puts argument onto the editing buffer stack
 ```
 
-## Logging
+## Systemd
 
 ```
 journalctl _COMM=<tab>
 man systemd.journal-fields # fields to match by
-systemctl list-units # list units that systemd currently has in memory
-systemctl list-unit-files # see which are enabled
+systemctl list-units       # list units that systemd currently has in memory
+systemctl list-unit-files  # see which are enabled
+systemctl status           # shows tree overview
+systemctl --failed         # shows system status, like degraded
+
+ls -al /lib/systemd/system/runlevel*
+systemctl get-default
+
 ```
 
 
