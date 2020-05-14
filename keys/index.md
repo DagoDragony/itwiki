@@ -28,6 +28,7 @@ print -z "stsdth       # puts argument onto the editing buffer stack
 ## Systemd
 
 ```
+cd /etc/systemd/system
 journalctl _COMM=<tab>
 man systemd.journal-fields # fields to match by
 systemctl list-units       # list units that systemd currently has in memory
@@ -53,6 +54,9 @@ pacman -Syu                              # download fresh copy of master package
 pacman -u file.tar.gz                    # install from package
 pacman -Qo file                          # find to which package file belongs
 pacman -Rdd <package_name>               # remove package, ignoring it's dependencies
+pacman -Sii                              # rever dependencies #
+pacman -Si                               # dependencies of remote packages
+pacman -Qi                               # show installed packagies
 
 cat * | grep -v "^$"                     # exclude lines which start with dollar sign
 coproc (zathura "$booksFolder/$1 &)      # for running commmand as separate process
