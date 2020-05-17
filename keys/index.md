@@ -62,6 +62,11 @@ cat * | grep -v "^$"                     # exclude lines which start with dollar
 coproc (zathura "$booksFolder/$1 &)      # for running commmand as separate process
 
 echo "sth\nhello\n" | tr '\n' ' '        # translate(replace) all new lines with spaces
+
+w                                        # show logged users and what are they doing
+who                                      #
+whoami # current user
+id
 ```
 
 ## Sbt
