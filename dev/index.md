@@ -6,3 +6,4 @@
 [Vim](Vim)
 [Troubleshooting](Troubleshooting)
 [Remote Connection](Remote-Connection)
+[Terminal](Terminal)

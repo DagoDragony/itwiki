@@ -67,6 +67,9 @@ w                                        # show logged users and what are they d
 who                                      #
 whoami # current user
 id
+
+stat <fileName> # statistics about file - times, size, inode..
+cal # calendar for this month
 ```
 
 ## Sbt
