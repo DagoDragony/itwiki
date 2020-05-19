@@ -108,8 +108,9 @@ zug " revert zg or zw command for current word
 <leader>n " fzf open file
 <C-p>     " NERDTreeToggle
 <F3>      " NERDTreeToggle
-cs"'      " change surounding " with '
-ds"       " remove surounding "
+cs        " '      " change surounding " with '
+ds        " " remove surounding "
 <leader>f " Goyo toggle
+<Ctrl+r>  " redo
 ```
 
