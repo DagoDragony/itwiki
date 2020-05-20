@@ -65,19 +65,20 @@ echo "sth\nhello\n" | tr '\n' ' '        # translate(replace) all new lines with
 
 w                                        # show logged users and what are they doing
 who                                      #
-whoami # current user
+whoami                                   # current user
 id
-tty # print device of terminal
+tty                                      # print device of terminal
 
 lscpu
 lsblk
 df -h
+dmesg                                    # print or control kernel ring buffer
 
 
-stat <fileName> # statistics about file - times, size, inode..
-cal # calendar for this month
+stat <fileName>                          # statistics about file - times, size, inode..
+cal                                      # calendar for this month
 
-info coreutils # gnu core utils
+info coreutils                           # gnu core utils
 ```
 
 ## Sbt
