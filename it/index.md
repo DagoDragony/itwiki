@@ -15,3 +15,5 @@
 [05 Linux Installation](05-Linux-Installation)
 
 [06 Hardware](06-Hardware)
+
+[07_Linux_common](07_Linux_common)

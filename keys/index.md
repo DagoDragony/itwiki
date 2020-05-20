@@ -67,9 +67,17 @@ w                                        # show logged users and what are they d
 who                                      #
 whoami # current user
 id
+tty # print device of terminal
+
+lscpu
+lsblk
+df -h
+
 
 stat <fileName> # statistics about file - times, size, inode..
 cal # calendar for this month
+
+info coreutils # gnu core utils
 ```
 
 ## Sbt
