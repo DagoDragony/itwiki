@@ -79,6 +79,7 @@ stat <fileName>                          # statistics about file - times, size, 
 cal                                      # calendar for this month
 
 info coreutils                           # gnu core utils
+yes stringThatWouldConstantlyRepeat      # infinite stream - could be used for maxing out file
 ```
 
 ## Sbt
