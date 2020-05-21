@@ -80,6 +80,10 @@ cal                                      # calendar for this month
 
 info coreutils                           # gnu core utils
 yes stringThatWouldConstantlyRepeat      # infinite stream - could be used for maxing out file
+dd if=/dev/sdb1 bs=512 count=1           # print to console first 512 bytes (could be used to read write MBR)
+cat /dev/urandom                         # infinite stream of random symbols, could be used to overwrite data to be unrecoverable
+shred                                    # for overwriting individual files, partitions, drives
+od -c -N 1000 < /dev/urandom             # octal display
 ```
 
 ## Sbt
