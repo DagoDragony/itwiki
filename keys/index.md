@@ -94,11 +94,20 @@ htop
 free
 vmstat
 iostat -j ID 
-lshw
-dmidecode -t 2
 lsusb -v | less
 lspci -v | less
 
+# results can be questionable - inacurate or wrong because, because hardware vendors not always cooperates
+lshw
+dmidecode -t 2
+
+sensors # temperature sensors
+sensors-detect
+
+smartctl -x /dev/nvme0n1
+hddtemp
+
+sar # system activity reporter
 ```
 
 ## Sbt
