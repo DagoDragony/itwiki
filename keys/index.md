@@ -87,6 +87,18 @@ od -c -N 1000 < /dev/urandom             # octal display
 fc                                       # open last command in editor
 
 pacman -Sq [<groupName>]                 # remote groups of software
+
+top
+atop
+htop
+free
+vmstat
+iostat -j ID 
+lshw
+dmidecode -t 2
+lsusb -v | less
+lspci -v | less
+
 ```
 
 ## Sbt
