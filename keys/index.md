@@ -91,6 +91,7 @@ pacman -Sq [<groupName>]                 # remote groups of software
 top
 atop
 htop
+iotop
 free
 vmstat
 iostat -j ID 
@@ -108,6 +109,8 @@ smartctl -x /dev/nvme0n1
 hddtemp
 
 sar # system activity reporter
+
+shopt # bash options
 ```
 
 ## Sbt
