@@ -3,12 +3,19 @@
 [Vimwiki](Vimwiki)
 [Vim](Vim)
 
+## Manual, Investigation
+
+```
+man
+help           # bash internals
+whence -wm '*' # zsh shows what shell knows - commands, functions, reserved words..
+type for       # check what type is keyword
+```
+
+
 ## Fzf
 
 ```
-type for               # check what type is keyword
-`whence -wm '*'`       # shows what shell knows - commands, functions, reserved words..
-
 packtree <libName>     #
 
 ^r                     # search in history
@@ -38,7 +45,6 @@ systemctl --failed         # shows system status, like degraded
 
 ls -al /lib/systemd/system/runlevel*
 systemctl get-default
-
 ```
 
 

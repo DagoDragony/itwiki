@@ -59,4 +59,12 @@ cat mypipe
 # console 2 releases command
 ```
 
-### 
+### Various
+
+Internal commands
+* is a part of a shell
+* doesn't create separate process
+
+External commands
+* are loaded only when needed
+* creates separate process on execution
