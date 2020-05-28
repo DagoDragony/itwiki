@@ -68,6 +68,13 @@ cat * | grep -v "^$"                     # exclude lines which start with dollar
 coproc (zathura "$booksFolder/$1 &)      # for running commmand as separate process
 
 echo "sth\nhello\n" | tr '\n' ' '        # translate(replace) all new lines with spaces
+echo b{ed,olt,ar}                        # beds bolts bars
+echo testfile{0,1,2,3,4}.txt             # testfile0.txt testfile1.txt...
+echo test{0..20}{a..f} # cycle in cyle
+ls *e.?6?*.asc # file globbing
+ls *[0-9][a-fgh][!m-o]*
+
+find . -type f -empty ! -name "*test.file*" # ! inverts name filter
 
 w                                        # show logged users and what are they doing
 who                                      #
@@ -104,19 +111,19 @@ iostat -j ID
 lsusb -v | less
 lspci -v | less
 
-# results can be questionable - inacurate or wrong because, because hardware vendors not always cooperates
+                                         # results can be questionable - inacurate or wrong because, because hardware vendors not always cooperates
 lshw
 dmidecode -t 2
 
-sensors # temperature sensors
+sensors                                  # temperature sensors
 sensors-detect
 
 smartctl -x /dev/nvme0n1
 hddtemp
 
-sar # system activity reporter
+sar                                      # system activity reporter
 
-shopt # bash options
+shopt                                    # bash options
 ```
 
 ## Sbt
