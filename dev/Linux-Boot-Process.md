@@ -28,5 +28,6 @@
 	* Load SystemD
 	* SystemD startup
 		* Mount `/etc/fstab`
+		* etc...
 		* Desktop Manager
 		* Windows Manager

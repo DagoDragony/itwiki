@@ -37,14 +37,16 @@ print -z "stsdth       # puts argument onto the editing buffer stack
 ```
 cd /etc/systemd/system
 journalctl _COMM=<tab>
-man systemd.journal-fields # fields to match by
-systemctl list-units       # list units that systemd currently has in memory
-systemctl list-unit-files  # see which are enabled
-systemctl status           # shows tree overview
-systemctl --failed         # shows system status, like degraded
+man systemd.journal-fields                     # fields to match by
+
+systemctl list-units                           # list units that systemd currently has in memory
+systemctl list-unit-files                      # see which are enabled
+systemctl status                               # shows tree overview
+systemctl --failed                             # shows system status, like degraded
+systemctl list-dependencies –after ssh.service # get services that ran after ssh
 
 ls -al /lib/systemd/system/runlevel*
-systemctl get-default
+systemctl get-default                          # get default runtime level
 ```
 
 
