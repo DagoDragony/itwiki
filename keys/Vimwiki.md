@@ -1,5 +1,6 @@
 # Vimwiki
 
+```
 <nmb><leader>ww - open vimWiki
 <leader>wd - delete wiki page U are in
 <leader>wr - rename wiki page U are in
@@ -31,4 +32,4 @@ gli - make a list item out of a normal line or change the symbol of the current 
 :VimwikiTable 5 2
 
 
-
+```

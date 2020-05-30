@@ -47,6 +47,9 @@ systemctl list-dependencies –after ssh.service # get services that ran after s
 
 ls -al /lib/systemd/system/runlevel*
 systemctl get-default                          # get default runtime level
+
+systemctl isolate multi-user.target # to move between different runtime targets
+systemctl isolate graphical.target
 ```
 
 
@@ -128,6 +131,10 @@ sar                                      # system activity reporter
 shopt                                    # bash options
 
 grub-install --version
+
+
+ll /usr/lib/systemd/system/*dm.service # list display managers
+ll /etc/systemd/system/display-manager.service # see what display manager is set
 ```
 
 ## Sbt

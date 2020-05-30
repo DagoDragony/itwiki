@@ -31,3 +31,16 @@
 		* etc...
 		* Desktop Manager
 		* Windows Manager
+
+Login
+1. systemd starts systemd-getty-generator daemon
+2. systemd-getty-generator spawns an agetty on each of the virtual consoles using the serial-getty@.service
+3. agettys wait for virtual console connection, which is the user switching to on of the VCs
+4. aggetty presents the text mode login screen on the display
+5. the user logs in
+6. the shell specified in /etc/passwd is started
+7. shell configuration scripts run
+8. the user works in the shell session
+9. the user logs off
+10. the systemd-getty-generator spawns an agetty on the logged out on VC
+11. go to step step 3
