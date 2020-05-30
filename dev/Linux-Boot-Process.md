@@ -23,3 +23,10 @@
 	  Consists of files and runtime kernel modules that are loaded as needed from the `/boot`
 	  Shows preboot selection screen
 	  All kernel files are identifyable by start of `vmlinuz`
+* Kernel 
+	* Extract itself(after it is loaded to RAM by GRUB) 
+	* Load SystemD
+	* SystemD startup
+		* Mount `/etc/fstab`
+		* Desktop Manager
+		* Windows Manager
