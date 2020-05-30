@@ -12,4 +12,14 @@
 ## Linux boot
 
 * GRUB (GRand Unified Bootloader) - 
-	* MBR 512b sector(boot.img) is executed GRUB is loaded into RAM
+	* First part of GRUB is loaded into RAM
+	  MBR 512b sector in first partition is executed
+	  `/boot/grub/i386-pc/boot.img`
+	* Second part of GRUB is loaded into RAM
+	  In MBR gap or boot track - space between MBR (sector 1 of 512b to sector 63 - where first partition starts)
+	  Function - begin execution with filesystem drivers necessary to locate next stage and load the needed drivers
+	  `/boot/grub/i386-pc/core.img`
+	* Locate and load a Linux kernel into RAM and turn control of the pc over to the kernel
+	  Consists of files and runtime kernel modules that are loaded as needed from the `/boot`
+	  Shows preboot selection screen
+	  All kernel files are identifyable by start of `vmlinuz`

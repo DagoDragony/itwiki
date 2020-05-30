@@ -124,6 +124,8 @@ hddtemp
 sar                                      # system activity reporter
 
 shopt                                    # bash options
+
+grub-install --version
 ```
 
 ## Sbt
