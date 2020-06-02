@@ -81,6 +81,10 @@ ls *[0-9][a-fgh][!m-o]*
 ls | column
 
 find . -type f -empty ! -name "*test.file*" # ! inverts name filter
+find / -type f -links 4 # find all files with 4 harldinks
+find /usr -inum 531003 # find files with inode 531003
+find /usr -samefile /usr/sbin/mkfs.ext3
+
 
 w                                        # show logged users and what are they doing
 who                                      #
@@ -141,7 +145,8 @@ seq -w 20 # generate sequence from 01 to 20
 
 chown
 chgrp
-
+chmod 640 file0[4-7]
+chmod g+rx,g-w file1, file2
 
 groupadd -g 5000 dev # works only after log out
 usermod -G 5000 [student](student) # works only after log out
@@ -149,6 +154,11 @@ gpasswd -M student,student1 dev # works only after log out
 tail /etc/group
 
 umask # default permissions to all created files(/etc/profile) - reverse logic - what permissions not to set, and x is never set
+
+
+strings /bin/ls # print files printable symbols
+
+
 ```
 
 ## Sbt
