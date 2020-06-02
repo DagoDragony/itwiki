@@ -78,6 +78,7 @@ echo testfile{0,1,2,3,4}.txt             # testfile0.txt testfile1.txt...
 echo test{0..20}{a..f} # cycle in cyle
 ls *e.?6?*.asc # file globbing
 ls *[0-9][a-fgh][!m-o]*
+ls | column
 
 find . -type f -empty ! -name "*test.file*" # ! inverts name filter
 
@@ -135,6 +136,19 @@ grub-install --version
 
 ll /usr/lib/systemd/system/*dm.service # list display managers
 ll /etc/systemd/system/display-manager.service # see what display manager is set
+
+seq -w 20 # generate sequence from 01 to 20
+
+chown
+chgrp
+
+
+groupadd -g 5000 dev # works only after log out
+usermod -G 5000 [student](student) # works only after log out
+gpasswd -M student,student1 dev # works only after log out
+tail /etc/group
+
+umask # default permissions to all created files(/etc/profile) - reverse logic - what permissions not to set, and x is never set
 ```
 
 ## Sbt
