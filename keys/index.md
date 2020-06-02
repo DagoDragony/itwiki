@@ -79,6 +79,8 @@ echo test{0..20}{a..f} # cycle in cyle
 ls *e.?6?*.asc # file globbing
 ls *[0-9][a-fgh][!m-o]*
 ls | column
+mv -t <dir> file1 file2 file4*.txt # move multiple files
+
 
 find . -type f -empty ! -name "*test.file*" # ! inverts name filter
 find / -type f -links 4 # find all files with 4 harldinks
