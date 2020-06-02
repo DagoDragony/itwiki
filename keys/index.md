@@ -92,11 +92,15 @@ whoami                                   # current user
 id
 tty                                      # print device of terminal
 
+dmesg                                    # print or control kernel ring buffer
 lscpu
 lsblk
 df -h
-dmesg                                    # print or control kernel ring buffer
+dumpe2fs /dev/sda1 # lots of deep info about filesystem (cylinder group info, inodes, blocks etc
+e2label /dev/sda1 MyBoot # give label to disk
+fsck # for fixing disk and getting report, if any problems, systemd runs it automatically
 
+script fileName # creates session in which it records everything what was done and outputed
 
 stat <fileName>                          # statistics about file - times, size, inode..
 cal                                      # calendar for this month
