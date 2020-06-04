@@ -115,6 +115,9 @@ cal                                      # calendar for this month
 info coreutils                           # gnu core utils
 yes stringThatWouldConstantlyRepeat      # infinite stream - could be used for maxing out file
 dd if=/dev/sdb1 bs=512 count=1           # print to console first 512 bytes (could be used to read write MBR)
+dd if=/dev/mem bs=2048 count=100 | od -c # read from ram
+/dev/null # most often for getting rid of unwanted output
+/dev/zero
 cat /dev/urandom                         # infinite stream of random symbols, could be used to overwrite data to be unrecoverable
 shred                                    # for overwriting individual files, partitions, drives
 od -c -N 1000 < /dev/urandom             # octal display
@@ -172,6 +175,8 @@ strings /bin/ls # print files printable symbols
 /usr/lib/udev/rules.d/ # udev default naming rules
 /lib/udev/rules.d/ # udev local naming rules
 
+dd -if=/dev/sda of=/tmp/myMBR.bak bs=512 count=1 # backup MBR
+dd if=/tmp/myMBR.bak of=/dev/sda # restore mbr record
 ```
 
 ## Sbt
