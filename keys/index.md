@@ -94,6 +94,11 @@ whoami                                   # current user
 id
 tty                                      # print device of terminal
 
+tty # on one console
+echo "hello" > /dev/pts/2 # send message to other terminal
+
+cat test.pdf > /dev/usb/lp0 # print directly to printer device
+
 dmesg                                    # print or control kernel ring buffer
 lscpu
 lsblk
