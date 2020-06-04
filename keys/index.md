@@ -164,6 +164,8 @@ umask # default permissions to all created files(/etc/profile) - reverse logic -
 
 strings /bin/ls # print files printable symbols
 
+/usr/lib/udev/rules.d/ # udev default naming rules
+/lib/udev/rules.d/ # udev local naming rules
 
 ```
 
