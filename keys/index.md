@@ -177,6 +177,11 @@ strings /bin/ls # print files printable symbols
 
 dd -if=/dev/sda of=/tmp/myMBR.bak bs=512 count=1 # backup MBR
 dd if=/tmp/myMBR.bak of=/dev/sda # restore mbr record
+
+ssh root@myHost
+ssh -L 80:intra.example.com:80 gw.example.com # local port forward
+sshfs -o idmap=user user@serverHost: ~/myDirForFs # home dir(nothing after ':' to local ~/myDirForFs mapping
+fusermount -u ~/myDirForFs # for unmouting sshfs
 ```
 
 ## Sbt
