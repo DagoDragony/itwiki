@@ -20,6 +20,7 @@
 
 these should always add up to rounding error 
 
+PR=[1;99 real-time priority  100;139 - meant for user-space]
 NI - nice [-20;+19] suggests kernel different priority. Lower value - higher priority
 PR = 20 + NI
 

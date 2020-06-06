@@ -2,6 +2,7 @@
 
 [Vimwiki](Vimwiki)
 [Vim](Vim)
+[Top](Top)
 
 ## Manual, Investigation
 
@@ -184,6 +185,8 @@ ssh -L 80:intra.example.com:80 gw.example.com     # local port forward
 sshfs -o idmap=user user@serverHost: ~/myDirForFs # home dir(nothing after ':' to local ~/myDirForFs mapping
 echo "ServerAliveInterval 60" >> ~/.ssh/config    # for staying connected and pinging every 60s
 fusermount -u ~/myDirForFs                        # for unmouting sshfs
+
+renice +1 <pid>
 ```
 
 ## Sbt
