@@ -12,3 +12,5 @@
 [Linux Administration](Linux-Administration)
 [Linux Boot Process](Linux-Boot-Process)
 [Ssh](Ssh)
+
+signal 2 is the same as Ctrl+C in console
