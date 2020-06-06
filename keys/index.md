@@ -129,6 +129,7 @@ top
 atop
 htop
 iotop
+glances # system overview from all points - disk, file sys, sensors, network, tasks, cpu, swap etc
 free
 vmstat
 iostat -j ID 

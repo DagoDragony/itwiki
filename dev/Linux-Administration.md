@@ -59,7 +59,11 @@ cat mypipe
 # console 2 releases command
 ```
 
-### Various
+## Processes
+
+CFS (Completeley Fair Scheduler) - determines which processor gets CPU time
+
+## Various
 
 Internal commands
 * is a part of a shell
