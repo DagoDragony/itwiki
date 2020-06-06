@@ -3,6 +3,8 @@
 [Vimwiki](Vimwiki)
 [Vim](Vim)
 [Top](Top)
+[atop](atop)
+[glances](glances)
 
 ## Manual, Investigation
 
@@ -131,6 +133,7 @@ atop
 htop
 glances
 iotop
+ps
 free
 vmstat
 iostat -j ID 
