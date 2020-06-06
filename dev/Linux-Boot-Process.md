@@ -24,10 +24,14 @@
 	  `/boot/grub/i386-pc/core.img`
 	* Locate and load a Linux kernel into RAM and turn control of the pc over to the kernel
 	  Consists of files and runtime kernel modules that are loaded as needed from the `/boot`
+	  `/boot/grub/grub.cfg`
 	  Shows preboot selection screen
 	  All kernel files are identifyable by start of `vmlinuz`
 * Kernel 
-	* Extract itself(after it is loaded to RAM by GRUB) 
+	* Extract itself(after it is loaded to RAM by GRUB)
+	  initrd initial root file system that is mounted prior to when the real root
+	  file system is available.
+	  `insmod` could be used to insert modules into kernel
 	* Load SystemD
 	* SystemD startup
 		* Mount `/etc/fstab`

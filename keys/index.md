@@ -7,7 +7,7 @@
 ## Manual, Investigation
 
 ```
-man
+man -K keyword # brute force search for keyword
 help           # bash internals
 whence -wm '*' # zsh shows what shell knows - commands, functions, reserved words..
 type for       # check what type is keyword
