@@ -128,8 +128,8 @@ pacman -Sq [<groupName>]                          # remote groups of software
 top
 atop
 htop
+glances
 iotop
-glances # system overview from all points - disk, file sys, sensors, network, tasks, cpu, swap etc
 free
 vmstat
 iostat -j ID 
