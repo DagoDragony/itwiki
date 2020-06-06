@@ -15,6 +15,9 @@
 	* First part of GRUB is loaded into RAM
 	  MBR 512b sector in first partition is executed
 	  `/boot/grub/i386-pc/boot.img`
+	  * Primary boot loader info (first 446b)
+	  * Partition table info (next 64b)
+	  * MBR validation check (last 2 bytes)
 	* Second part of GRUB is loaded into RAM
 	  In MBR gap or boot track - space between MBR (sector 1 of 512b to sector 63 - where first partition starts)
 	  Function - begin execution with filesystem drivers necessary to locate next stage and load the needed drivers
