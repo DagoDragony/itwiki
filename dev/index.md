@@ -13,4 +13,4 @@
 [Linux Boot Process](Linux-Boot-Process)
 [Ssh](Ssh)
 
-signal 2 is the same as Ctrl+C in console
+`/proc` and `/sys` exists only in ram

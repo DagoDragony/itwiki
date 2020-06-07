@@ -15,5 +15,7 @@ x - show or not by which column tasks are sorted
 W - write your top settings to file ~/.toprc
 
 k - kill process
+
+c - toogle show fool command
 ```
 

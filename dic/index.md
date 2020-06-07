@@ -6,4 +6,6 @@ ZLE(zsh line editor) -
 Virtual memory - RAM + swap
 Thrashing - state when almost all virtual memory is used and server lags because of paging process
 Pseudo terminal - linux device file to which a terminal emulator ia attached in order to interface with  os
+signal 2 is the same as Ctrl+C in console
+SMART (Self-monitoring, Analysis and Reporting Technology) - monitoring system included in HDD's and SSD's etc
 
