@@ -58,6 +58,30 @@ gcap           " comment out a paragraph
 <space>a       " list all compilation errors
 <leader>ws     " see expanded text of the line
 @:             " repeat last command (useful after Rg <search>
+
+:Explore " netwr
+:Sexplore "
+:Vexplore "
+F1 " help
+<c-l> " refresh
+<c-tab> " shring expand  a netrw/explore window
+i - listing toogle
+gn - make selected dir top of a tree
+d - make directory
+D - delete files or directories
+mf - mark file
+mF - unmark file
+mu - unmark all files
+md - apply diff to marked files
+o - open directory in seperate window
+p - preview window
+mb - bookmark current dir
+gb - go to prieviously bookmark dir
+qb - list bookmarked directories and history
+qf - display information on file
+R - rename file or directory
+x - view file with associated program
+% - open a new file in netrw current dir
 ```
 
 ## Vimdiff
