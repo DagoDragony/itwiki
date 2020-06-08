@@ -67,7 +67,6 @@ F1 " help
 <c-tab> " shring expand  a netrw/explore window
 i - listing toogle
 gn - make selected dir top of a tree
-d - make directory
 D - delete files or directories
 mf - mark file
 mF - unmark file
@@ -81,7 +80,9 @@ qb - list bookmarked directories and history
 qf - display information on file
 R - rename file or directory
 x - view file with associated program
+d - make directory
 % - open a new file in netrw current dir
+mz - compress/decompress
 ```
 
 ## Vimdiff
