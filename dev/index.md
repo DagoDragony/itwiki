@@ -12,5 +12,6 @@
 [Linux Administration](Linux-Administration)
 [Linux Boot Process](Linux-Boot-Process)
 [Ssh](Ssh)
+Printer
 
 `/proc` and `/sys` exists only in ram

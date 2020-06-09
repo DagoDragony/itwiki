@@ -190,6 +190,8 @@ echo "ServerAliveInterval 60" >> ~/.ssh/config    # for staying connected and pi
 fusermount -u ~/myDirForFs                        # for unmouting sshfs
 
 renice +1 <pid>
+
+lpinfo -v # used to list all of the available buses, protocols and any printers attached to each
 ```
 
 ## Sbt
