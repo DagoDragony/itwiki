@@ -123,7 +123,6 @@ dd if=/dev/mem bs=2048 count=100 | od -c          # read from ram
 /dev/zero
 cat /dev/urandom                                  # infinite stream of random symbols, could be used to overwrite data to be unrecoverable
 shred                                             # for overwriting individual files, partitions, drives
-od -c -N 1000 < /dev/urandom                      # octal display
 fc                                                # open last command in editor
 
 pacman -Sq [<groupName>]                          # remote groups of software
@@ -192,6 +191,9 @@ fusermount -u ~/myDirForFs                        # for unmouting sshfs
 renice +1 <pid>
 
 lpinfo -v # used to list all of the available buses, protocols and any printers attached to each
+
+od -c -N 1000 < /dev/urandom                      # octal display
+unix2dos -n cpuHog cpuHog.dos
 ```
 
 ## Sbt
