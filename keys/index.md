@@ -38,17 +38,24 @@ print -z "stsdth       # puts argument onto the editing buffer stack
 ## Systemd
 
 ```
-cd /etc/systemd/system
 journalctl _COMM=<tab>
 man systemd.journal-fields                     # fields to match by
 
 systemctl list-units                           # list units that systemd currently has in memory
 systemctl list-unit-files                      # see which are enabled
+systemclt list-timers
+
 systemctl status                               # shows tree overview
 systemctl --failed                             # shows system status, like degraded
 systemctl list-dependencies –after ssh.service # get services that ran after ssh
 
+systemctl start logwatch.timer
+systemctl enable logwatch.timer
+
+
 ls -al /lib/systemd/system/runlevel*
+cd /lib/systemd/system
+cd /etc/systemd/system
 systemctl get-default                          # get default runtime level
 
 systemctl isolate multi-user.target # to move between different runtime targets
