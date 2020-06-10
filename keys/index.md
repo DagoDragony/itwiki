@@ -145,6 +145,8 @@ lsusb -t # tree
 usb-devices # same as lsusb but more
 lspci -v | less
 
+bc # calculator
+
 
 
 sensors                                           # temperature sensors
@@ -202,7 +204,8 @@ unix2mac
 wvText # used to convert MS Word docs to text format
 odt2txt
 
-
+watch <commands> # monitor program output
+time  <commands> # for time calculation
 ```
 
 ## Sbt
