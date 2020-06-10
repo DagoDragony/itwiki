@@ -136,12 +136,16 @@ ps
 free
 vmstat
 iostat -j ID 
-lsusb -v | less
-lspci -v | less
 
                                                   # results can be questionable - inacurate or wrong because, because hardware vendors not always cooperates
 lshw
-dmidecode -t 2
+dmidecode -t 2 # DMI(Desktop Managment Interface)system's hardware components description, uses SMBIOS info(data collection performed by BIOS)
+lsusb -v | less
+lsusb -t # tree
+usb-devices # same as lsusb but more
+lspci -v | less
+
+
 
 sensors                                           # temperature sensors
 sensors-detect
@@ -194,6 +198,11 @@ lpinfo -v # used to list all of the available buses, protocols and any printers 
 
 od -c -N 1000 < /dev/urandom                      # octal display
 unix2dos -n cpuHog cpuHog.dos
+unix2mac
+wvText # used to convert MS Word docs to text format
+odt2txt
+
+
 ```
 
 ## Sbt
