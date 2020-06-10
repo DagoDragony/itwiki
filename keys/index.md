@@ -206,6 +206,9 @@ odt2txt
 
 watch <commands> # monitor program output
 time  <commands> # for time calculation
+
+chronyc tracking
+chronyc sources
 ```
 
 ## Sbt
