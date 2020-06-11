@@ -238,4 +238,14 @@ sbt "~compile" # recompile on code change
 :blist <bookmarkName> " go to specified bookmark
 <tab>                 " table of content
 ```
+## Git
+
+```
+git status
+git add -a -m "commit msg" # add all and commit
+git checkout -b "new branch name"
+git push origin branchName
+git reset # unstage all staged files
+
+```
 
