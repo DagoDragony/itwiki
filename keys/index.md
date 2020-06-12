@@ -60,6 +60,9 @@ systemctl get-default                          # get default runtime level
 
 systemctl isolate multi-user.target # to move between different runtime targets
 systemctl isolate graphical.target
+
+crontab -l
+crontab -e # lets edit cronjobs and after save restarts daemon
 ```
 
 
