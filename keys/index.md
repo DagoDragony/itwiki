@@ -63,6 +63,10 @@ systemctl isolate graphical.target
 
 crontab -l
 crontab -e # lets edit cronjobs and after save restarts daemon
+/etc/anacrontab # jobs that intended to run in specific intervals(will be ran even if time was missed)
+at now +2 minutes # delayed job run, Ctrl+D to finish
+atq # show what jobs to be run
+atrm <jobNmb> # remove job
 ```
 
 
