@@ -256,3 +256,10 @@ git reset # unstage all staged files
 
 ```
 
+## Network
+
+```
+ip neigh # show neighbour  networks, if one, probably gateway
+ping -c2 _gateway
+```
+

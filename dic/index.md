@@ -8,4 +8,10 @@ Thrashing - state when almost all virtual memory is used and server lags because
 Pseudo terminal - linux device file to which a terminal emulator ia attached in order to interface with  os
 signal 2 is the same as Ctrl+C in console
 SMART (Self-monitoring, Analysis and Reporting Technology) - monitoring system included in HDD's and SSD's etc
+NIC (Network Interface Controller) - hardware for network connecting
+Switch - hardware device used to connect multiple nodes together
+Router - device that routes data packets between 2 or more networks based on destination IP address
+Default gateway - at least one router on the network is the default gateway to other networks or the rest of the Internet
+Connection - is a logical link between two nodes on a network
+MAX - is a unique hardware address assigned to each NIC, also called burned-in address or hardware address
 
