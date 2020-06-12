@@ -14,4 +14,6 @@ Router - device that routes data packets between 2 or more networks based on des
 Default gateway - at least one router on the network is the default gateway to other networks or the rest of the Internet
 Connection - is a logical link between two nodes on a network
 MAX - is a unique hardware address assigned to each NIC, also called burned-in address or hardware address
-
+CIDR (Classless Inter-Domain Routing) - defines notation methodology for network addressing that is used to specify the network portion of an IP address
+NAT (Network Address Translation) - 
+Subnet mask
