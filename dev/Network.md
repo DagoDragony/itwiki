@@ -13,4 +13,11 @@ Network layers
    This layer cannot access hosts that are not on the local network
 5. Physical layer(Bits) - hardware level consisting of NICs and the physical network cable as well as the hardware-level protocols used to transmit individual bits
 
+Subnet mask
+Eg. 192.168.2.64/26
+Subnet mask in binary
+11111111 11111111 11111111 11000000
+First address is Network address 192.168.2.64
+Last address is Broadcast address 192.168.2.127
+Hosts are all between Network and Broadcast addresses
 
