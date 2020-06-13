@@ -17,3 +17,4 @@ MAX - is a unique hardware address assigned to each NIC, also called burned-in a
 CIDR (Classless Inter-Domain Routing - subnetting) - defines notation methodology for network addressing that is used to specify the network portion of an IP address, it's value after ip like /16 (subnetting)
 NAT (Network Address Translation) - 
 Subnet mask - show how many addresses are possible in local network
+DHCP(Dynamic Host Configuration Protocol) - protocol that provides quick, automatic and central managment for the distribution of IP addresses within a network

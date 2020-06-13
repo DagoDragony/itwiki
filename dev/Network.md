@@ -21,3 +21,6 @@ First address is Network address 192.168.2.64
 Last address is Broadcast address 192.168.2.127
 Hosts are all between Network and Broadcast addresses
 
+## DHCP
+
+Used to configure the subnet mask, default gateway and dns server information on device
