@@ -224,8 +224,10 @@ time  <commands> # for time calculation
 chronyc tracking
 chronyc sources
 
-lsattr
+lsattr # list Ext2-Ext3-Ext4 attributes
 chattr
+
+
 ```
 
 ## Sbt
@@ -268,5 +270,9 @@ ping -c2 _gateway
 ip addr show enp0s3
 ip link set enp0s3 down
 /etc/resolv.conf
+/etc/hosts
+
+ip route # route table
+traceroute www.google.lt
 ```
 

@@ -24,3 +24,13 @@ Hosts are all between Network and Broadcast addresses
 ## DHCP
 
 Used to configure the subnet mask, default gateway and dns server information on device
+
+### Name search
+
+1. Type address
+2. Browser sends the request to OS
+3. OS checks /etc/hosts if host name is found returns IP to browser
+4. If not found in /etc/hosts, it searches in first name server of /etc/resolve.conf
+5. Local name server sends the request to a remote name server
+6. Root name server returns IP address of the authoritative name server for given address
+7. The browser uses the IP address to send a request for a web page which  is downloaded to browser
