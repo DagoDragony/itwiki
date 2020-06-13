@@ -223,6 +223,9 @@ time  <commands> # for time calculation
 
 chronyc tracking
 chronyc sources
+
+lsattr
+chattr
 ```
 
 ## Sbt
@@ -261,5 +264,9 @@ git reset # unstage all staged files
 ```
 ip neigh # show neighbour  networks, if one, probably gateway
 ping -c2 _gateway
+
+ip addr show enp0s3
+ip link set enp0s3 down
+/etc/resolv.conf
 ```
 
