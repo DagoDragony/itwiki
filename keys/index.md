@@ -227,7 +227,7 @@ chronyc sources
 lsattr # list Ext2-Ext3-Ext4 attributes
 chattr
 
-
+curl wttr.in # get weather forecast in console
 ```
 
 ## Sbt
