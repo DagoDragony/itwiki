@@ -274,5 +274,6 @@ ip link set enp0s3 down
 
 ip route # route table
 traceroute www.google.lt
+mtr -n www.google.lt # instead of traceroute
 ```
 
