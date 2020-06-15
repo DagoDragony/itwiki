@@ -274,6 +274,9 @@ ip link set enp0s3 down
 
 ip route # route table
 traceroute www.google.lt
-mtr -n www.google.lt # instead of traceroute
+mtr -n www.google.lt # instead of traceroute, packet loss could indicate a problem
+whois 78.56.127.254 # shows extended info about ip owner
+
+iptraf-ng # traffic monitor and more, GUI program analog - wireshark
 ```
 
