@@ -39,6 +39,10 @@ print -z "stsdth       # puts argument onto the editing buffer stack
 
 ```
 journalctl _COMM=<tab>
+journalctl -t kernel
+journalctl -p2 # show messages critical and worse
+journalctl --list-boots
+journalctl -S 01:00:00 -U 01:10:05 # show since until, can be with full dates
 man systemd.journal-fields                     # fields to match by
 
 systemctl                                      # load all loaded and active systemd units
@@ -57,15 +61,20 @@ systemctl list-dependencies –after ssh.service # get services that ran after s
 
 systemctl start logwatch.timer
 systemctl enable logwatch.timer
+systemd-analyze calendar 2030-06-17 # helper for setting time with timers
 
 
 ls -al /lib/systemd/system/runlevel*
 cd /lib/systemd/system
 cd /etc/systemd/system
 systemctl get-default                          # get default runtime level
+systemctl daemon-reload
 
 systemctl isolate multi-user.target            # to move between different runtime targets
 systemctl isolate graphical.target
+
+systemd-analyze blame # longest initializing services list
+systemd-analyze plot > system.svg
 
 crontab -l
 crontab -e                                     # lets edit cronjobs and after save restarts daemon
