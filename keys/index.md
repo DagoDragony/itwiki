@@ -41,8 +41,12 @@ print -z "stsdth       # puts argument onto the editing buffer stack
 journalctl _COMM=<tab>
 man systemd.journal-fields                     # fields to match by
 
+systemctl # load all loaded and active systemd units
 systemctl list-units                           # list units that systemd currently has in memory
 systemctl list-unit-files                      # see which are enabled
+systemctl list-unit-files -t [timer,mount]
+systemctl --all -t service # list all serice units whether they are active or not
+systemctl list-mounts
 systemclt list-timers
 
 systemctl status                               # shows tree overview
