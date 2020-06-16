@@ -41,15 +41,17 @@ print -z "stsdth       # puts argument onto the editing buffer stack
 journalctl _COMM=<tab>
 man systemd.journal-fields                     # fields to match by
 
-systemctl # load all loaded and active systemd units
+systemctl                                      # load all loaded and active systemd units
 systemctl list-units                           # list units that systemd currently has in memory
 systemctl list-unit-files                      # see which are enabled
 systemctl list-unit-files -t [timer,mount]
-systemctl --all -t service # list all serice units whether they are active or not
+systemctl --all -t service                     # list all serice units whether they are active or not
 systemctl list-mounts
 systemclt list-timers
 
 systemctl status                               # shows tree overview
+systemctl status multi-user.target             # target status
+systemctl status default.target                # target status
 systemctl --failed                             # shows system status, like degraded
 systemctl list-dependencies –after ssh.service # get services that ran after ssh
 
@@ -62,15 +64,15 @@ cd /lib/systemd/system
 cd /etc/systemd/system
 systemctl get-default                          # get default runtime level
 
-systemctl isolate multi-user.target # to move between different runtime targets
+systemctl isolate multi-user.target            # to move between different runtime targets
 systemctl isolate graphical.target
 
 crontab -l
-crontab -e # lets edit cronjobs and after save restarts daemon
-/etc/anacrontab # jobs that intended to run in specific intervals(will be ran even if time was missed)
-at now +2 minutes # delayed job run, Ctrl+D to finish
-atq # show what jobs to be run
-atrm <jobNmb> # remove job
+crontab -e                                     # lets edit cronjobs and after save restarts daemon
+/etc/anacrontab                                # jobs that intended to run in specific intervals(will be ran even if time was missed)
+at now +2 minutes                              # delayed job run, Ctrl+D to finish
+atq                                            # show what jobs to be run
+atrm <jobNmb>                                  # remove job
 ```
 
 
