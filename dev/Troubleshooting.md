@@ -8,3 +8,7 @@
   `.. && {echo "bla"; exit 1}` good
   `.. && (echo "bla"; exit 1)` bad (doesn't exit script)
 * good use of > /dev/tty when you want to call and editor in pipeline e.g. with xargs
+
+## Pacman
+
+
