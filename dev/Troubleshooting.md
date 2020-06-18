@@ -1,5 +1,10 @@
 # Troubleshooting
 
+## Linux
+
+* hardware and boot problems
+	* dmesg
+
 ## Shell
 
 * Fail to use $ before variable

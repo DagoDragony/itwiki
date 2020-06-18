@@ -43,7 +43,12 @@ journalctl -t kernel
 journalctl -p2 # show messages critical and worse
 journalctl --list-boots
 journalctl -S 01:00:00 -U 01:10:05 # show since until, can be with full dates
+journalctl --since 2017-12-20 --until 2017-12-24
+journalctl --since yesterday -u NetworkManager
+dmesg # logs that goes to journalctl too, but shorter in live time
 man systemd.journal-fields                     # fields to match by
+systemd-cat # systemd specific logging
+logger "message to log" # logger message to system log(systemd journal if systemd), seems better than systemd-cat
 
 systemctl                                      # load all loaded and active systemd units
 systemctl list-units                           # list units that systemd currently has in memory
@@ -61,6 +66,9 @@ systemctl list-dependencies –after ssh.service # get services that ran after s
 
 systemctl start logwatch.timer
 systemctl enable logwatch.timer
+logwatch --detail 10 | less
+logwatch --service systemd | less
+logwatch --range today | less
 systemd-analyze calendar 2030-06-17 # helper for setting time with timers
 
 
@@ -131,7 +139,6 @@ echo "hello" > /dev/pts/2                         # send message to other termin
 
 cat test.pdf > /dev/usb/lp0                       # print directly to printer device
 
-dmesg                                             # print or control kernel ring buffer
 lscpu
 lsblk
 df -h
@@ -186,6 +193,7 @@ hddtemp
 
 sar                                               # system activity reporter
 sar -A | less
+/var/log/sa # stats data location
 
 shopt                                             # bash options
 
