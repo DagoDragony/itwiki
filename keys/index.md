@@ -213,6 +213,7 @@ strings /bin/ls                                   # print files printable symbol
 
 udevadm monitor                                   # monitor udev events
 udevadm info -a -n /dev/sdb | less                # query udev db for device info
+udevadm control --reload # reload after adding scripts and similar changes
 dmesg | tail | grep -i sd                         # kernel ring buffer messages
 /usr/lib/udev/rules.d/                            # udev default naming rules
 /lib/udev/rules.d/                                # udev local naming rules
