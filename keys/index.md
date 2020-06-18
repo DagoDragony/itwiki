@@ -185,6 +185,7 @@ smartctl -x /dev/nvme0n1
 hddtemp
 
 sar                                               # system activity reporter
+sar -A | less
 
 shopt                                             # bash options
 

@@ -1,3 +1,4 @@
+
 terminal - text input/output environment
 console - physical terminal
 shell - command line interpreter
@@ -19,3 +20,4 @@ NAT (Network Address Translation) -
 Subnet mask - show how many addresses are possible in local network
 DHCP(Dynamic Host Configuration Protocol) - protocol that provides quick, automatic and central managment for the distribution of IP addresses within a network
 ICMP packets (Internet Control Message Protocol) - not for data, but for routers to exchange information about internet. Ping uses this protocol
+SAR (System Activity Report) - service collecting system monitoring data up to 1 month
