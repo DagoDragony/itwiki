@@ -15,5 +15,6 @@
 [Printer](Printer)
 [Network](Network)
 [SystemD](SystemD)
+[IPC](IPC)
 
 `/proc` and `/sys` exists only in ram

@@ -168,13 +168,13 @@ iostat -j ID
 
                                                   # results can be questionable - inacurate or wrong because, because hardware vendors not always cooperates
 lshw
-dmidecode -t 2 # DMI(Desktop Managment Interface)system's hardware components description, uses SMBIOS info(data collection performed by BIOS)
+dmidecode -t 2                                    # DMI(Desktop Managment Interface)system's hardware components description, uses SMBIOS info(data collection performed by BIOS)
 lsusb -v | less
-lsusb -t # tree
-usb-devices # same as lsusb but more
+lsusb -t                                          # tree
+usb-devices                                       # same as lsusb but more
 lspci -v | less
 
-bc # calculator
+bc                                                # calculator
 
 
 
@@ -211,6 +211,9 @@ umask                                             # default permissions to all c
 
 strings /bin/ls                                   # print files printable symbols
 
+udevadm monitor                                   # monitor udev events
+udevadm info -a -n /dev/sdb | less                # query udev db for device info
+dmesg | tail | grep -i sd                         # kernel ring buffer messages
 /usr/lib/udev/rules.d/                            # udev default naming rules
 /lib/udev/rules.d/                                # udev local naming rules
 
@@ -225,24 +228,24 @@ fusermount -u ~/myDirForFs                        # for unmouting sshfs
 
 renice +1 <pid>
 
-lpinfo -v # used to list all of the available buses, protocols and any printers attached to each
+lpinfo -v                                         # used to list all of the available buses, protocols and any printers attached to each
 
 od -c -N 1000 < /dev/urandom                      # octal display
 unix2dos -n cpuHog cpuHog.dos
 unix2mac
-wvText # used to convert MS Word docs to text format
+wvText                                            # used to convert MS Word docs to text format
 odt2txt
 
-watch <commands> # monitor program output
-time  <commands> # for time calculation
+watch <commands>                                  # monitor program output
+time  <commands>                                  # for time calculation
 
 chronyc tracking
 chronyc sources
 
-lsattr # list Ext2-Ext3-Ext4 attributes
+lsattr                                            # list Ext2-Ext3-Ext4 attributes
 chattr
 
-curl wttr.in # get weather forecast in console
+curl wttr.in                                      # get weather forecast in console
 ```
 
 ## Sbt
