@@ -192,7 +192,12 @@ smartctl -x /dev/nvme0n1
 hddtemp
 
 sar                                               # system activity reporter
-sar -A | less
+sar -u 1 3 # show cpu every 1 sec for 3x
+sar -r # memory stats
+sar -b # disk stats
+sar -w 1 3 # context switches
+sar -n [DEV, TCP, UDP ... ALL] # network usage
+sar -A | less # show everything
 /var/log/sa # stats data location
 
 shopt                                             # bash options
