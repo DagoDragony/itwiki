@@ -132,6 +132,14 @@ who                                               #
 whoami                                            # current user
 id
 tty                                               # print device of terminal
+/etc/passwd
+/etc/shadow # passwd moved to shadow, it's safer as it can be read only by root
+openssl passwd -6 mypassword
+pwgen # password generator
+/etc/group
+/etc/login.defs # configuration for new users
+/etc/skel # files that would be copied to new users home dir
+/etc/security/pwquality.conf # password requirements
 
 tty                                               # on one console
 echo "hello" > /dev/pts/2                         # send message to other terminal
