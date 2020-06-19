@@ -138,8 +138,13 @@ openssl passwd -6 mypassword
 pwgen # password generator
 /etc/group
 /etc/login.defs # configuration for new users
+/etc/default/useradd # configuration for new user
 /etc/skel # files that would be copied to new users home dir
 /etc/security/pwquality.conf # password requirements
+useradd -c "Test user" -d /TestFS/testuser -s /usr/bin/zsh testuser # create user
+usermod -e 2019-06-05 testuser # expire user password on defined date
+userdel -r testuser # delete user with home dir
+pkill -KILL -U student1 # kill all user processes
 
 tty                                               # on one console
 echo "hello" > /dev/pts/2                         # send message to other terminal
