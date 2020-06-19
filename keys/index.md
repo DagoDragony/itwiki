@@ -26,7 +26,6 @@ packtree <libName>     #
 cd **<tab>             # fzf autocomplete
 ssh **<tab>            # fzf autocomplete
 rm ^t                  # fzf you can select multiple files to delete
-git add ^t             # fzf autocomplete
 kill -9 <tab>          #
 unset **<tab>          #
 export **<tab>         #
@@ -290,8 +289,9 @@ git status
 git add -a -m "commit msg" # add all and commit
 git checkout -b "new branch name"
 git push origin branchName
-git reset # unstage all staged files
-
+git reset                  # unstage all staged files
+git add ^t                 # fzf autocomplete
+git restore <file>...      # restore/undo changes in file
 ```
 
 ## Network
