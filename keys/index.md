@@ -118,6 +118,7 @@ echo test{0..20}{a..f}                            # cycle in cyle
 ls *e.?6?*.asc                                    # file globbing
 ls *[0-9][a-fgh][!m-o]*
 ls | column
+ls -t # sort by time
 mv -t <dir> file1 file2 file4*.txt                # move multiple files
 
 
