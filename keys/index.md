@@ -280,9 +280,13 @@ lastb # all bad login attempts
 
 firewall-cmd --list-ports [--permanent] # list existing rules, permanent show rules that will be active after restart
 firewall-cmd --add-service=telnet
+firewall-cmd --remove-service=telnet
 firewall-cmd --list-services
 firewall-cmd --list-services [--permanent]
 firewall-cmd --runtime-to-permanent # save all configuration
+
+iptables-save # list rules
+iptables -I INPUT 5 -p tcp -m state --state NEW -m tcp --dport 23 -j ACCEPT; iptables-save
 
 ```
 
