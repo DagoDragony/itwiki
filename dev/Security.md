@@ -12,7 +12,7 @@ Main Considerations
 Insecure shell sending everything in plain text
 It's comfy to view package data with tcpdump
 
-## Firewalls
+## Firewall
 
 Firewall and IpTables are wrappers around netfilter which is a part of kernel.
 Firewall blocks all incoming packets unless explicitly allowed
@@ -23,3 +23,8 @@ Packet outcomes
 * Drop - packet is dropped and proceeds no further. No msg is sent back to the originator.
   This is useful when blocking IP of known spammers. Their sending host must wait through timeout
   to try again, thus slowing down their attacks significantly
+  
+Firewall software
+* iptables
+* firewalld
+* nftables

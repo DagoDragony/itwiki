@@ -277,6 +277,13 @@ curl wttr.in                                      # get weather forecast in cons
 
 last # show a listing of last logged in users
 lastb # all bad login attempts
+
+firewall-cmd --list-ports [--permanent] # list existing rules, permanent show rules that will be active after restart
+firewall-cmd --add-service=telnet
+firewall-cmd --list-services
+firewall-cmd --list-services [--permanent]
+firewall-cmd --runtime-to-permanent # save all configuration
+
 ```
 
 ## Sbt
