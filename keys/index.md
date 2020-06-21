@@ -274,6 +274,9 @@ lsattr                                            # list Ext2-Ext3-Ext4 attribut
 chattr
 
 curl wttr.in                                      # get weather forecast in console
+
+last # show a listing of last logged in users
+lastb # all bad login attempts
 ```
 
 ## Sbt

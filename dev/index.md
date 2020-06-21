@@ -16,5 +16,6 @@
 [Network](Network)
 [SystemD](SystemD)
 [IPC](IPC)
+[Security](Security)
 
 `/proc` and `/sys` exists only in ram
