@@ -201,7 +201,7 @@ bc                                                # calculator
 sensors                                           # temperature sensors
 sensors-detect
 
-smartctl -x /dev/nvme0n1
+smartctl -x /dev/nvme0n1 # disk health report
 hddtemp
 
 sar                                               # system activity reporter
