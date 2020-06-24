@@ -102,14 +102,21 @@ xclip -sel clip id_rsa.pub                        # copy file content to clipboa
 pacman -Ql package_name                           # list files belonging to package
 pacman -Qi                                        # show installed packagies
 pacman -Qe # show only programs that you explicitly installed
-pacman -Syu                                       # download fresh copy of master package database and upgrade every package
-pacman -u file.tar.gz                             # install from package
+pacman -Qdt # orphan dependencies
 pacman -Qo file                                   # find to which package file belongs
-pacman -Rs <package_name> # remove package with dependencies if they are not used elsewhere
-pacman -Rns <package_name> # 
-pacman -Rdd <package_name>                        # remove package, ignoring it's dependencies
+pacman -Syu                                       # download fresh copy of master package database and upgrade every package #maintenance
 pacman -Sii                                       # rever dependencies #
 pacman -Si                                        # dependencies of remote packages
+pacman -Sc # remove cache of old packages #maintenance
+pacman -u file.tar.gz                             # install from package
+pacman -Rns <package_name> # remove package with dependencies if they are not used elsewhere
+pacman -Rdd <package_name>                        # remove package, ignoring it's dependencies
+yay -Si xmonad # show extensive info about package
+yay -Sua # update AUR packages
+yay -Pu # give updatable packages
+yay -Yc # removes uneeded dependencies #maintenance
+yay -Ps # print package information summary
+yay -Syu # like pacman + updates AUR packages
 
 cat * | grep -v "^$"                              # exclude lines which start with dollar sign
 coproc (zathura "$booksFolder/$1 &)               # for running commmand as separate process
