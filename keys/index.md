@@ -100,13 +100,16 @@ tar -xvf <fileToExtract <whereToExtract>          # extract archive to specific 
 xclip -sel clip id_rsa.pub                        # copy file content to clipboard
 
 pacman -Ql package_name                           # list files belonging to package
+pacman -Qi                                        # show installed packagies
+pacman -Qe # show only programs that you explicitly installed
 pacman -Syu                                       # download fresh copy of master package database and upgrade every package
 pacman -u file.tar.gz                             # install from package
 pacman -Qo file                                   # find to which package file belongs
+pacman -Rs <package_name> # remove package with dependencies if they are not used elsewhere
+pacman -Rns <package_name> # 
 pacman -Rdd <package_name>                        # remove package, ignoring it's dependencies
 pacman -Sii                                       # rever dependencies #
 pacman -Si                                        # dependencies of remote packages
-pacman -Qi                                        # show installed packagies
 
 cat * | grep -v "^$"                              # exclude lines which start with dollar sign
 coproc (zathura "$booksFolder/$1 &)               # for running commmand as separate process
