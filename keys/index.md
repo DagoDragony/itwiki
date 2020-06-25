@@ -310,6 +310,7 @@ sbt "inspect test:compile"
 sbt "inspect tree" | less -R
 
 sbt "~compile" # recompile on code change
+sbt "show fullResolvers" # show all resolvers of project
 ```
 
 ## Zathura
