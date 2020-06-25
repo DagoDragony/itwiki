@@ -137,6 +137,7 @@ cs        " '      " change surounding " with '
 ds        " " remove surounding "
 <leader>f " Goyo toggle
 <Ctrl+r>  " redo
+shift-tab " fzf select multiple files
 ```
 
 
