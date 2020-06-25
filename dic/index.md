@@ -22,3 +22,4 @@ DHCP(Dynamic Host Configuration Protocol) - protocol that provides quick, automa
 ICMP packets (Internet Control Message Protocol) - not for data, but for routers to exchange information about internet. Ping uses this protocol
 SAR (System Activity Report) - service collecting system monitoring data up to 1 month
 Telnet - old terminal emulator, that is insecure
+GAV (GroupId, Artifact, Version) - short for dependency description in maven

@@ -136,7 +136,7 @@ find . -type f -empty ! -name "*test.file*"       # ! inverts name filter
 find / -type f -links 4                           # find all files with 4 harldinks
 find /usr -inum 531003                            # find files with inode 531003
 find /usr -samefile /usr/sbin/mkfs.ext3
-
+find ./ -type f -exec sed -i 's/foo/bar/g' {} \; # replace in all files foo to bar
 
 w                                                 # show logged users and what are they doing
 who                                               #
