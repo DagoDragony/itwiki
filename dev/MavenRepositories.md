@@ -2,4 +2,6 @@
 
 Search for GAV in:
 * project page
-* http://search.maven.org
+* Repo sites
+	* http://search.maven.org official site of mvn central repo
+	* mvnrepository.com 3rd party site, searches central and other repos
