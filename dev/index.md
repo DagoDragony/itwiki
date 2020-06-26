@@ -19,5 +19,6 @@
 [Security](Security)
 [Backup](Backup)
 [MavenRepositories](MavenRepositories)
+[LinuxInstallAutomation](LinuxInstallAutomation)
 
 `/proc` and `/sys` exists only in ram
