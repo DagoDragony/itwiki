@@ -103,6 +103,7 @@ ln -s <pathToFile> <pathToLink> # create soft link
 
 pacman -Ql package_name                           # list files belonging to package
 pacman -Qi                                        # show installed packagies
+pacman -Qi package_name # show package info including what depends on package and it's dependencies
 pacman -Qe # show only programs that you explicitly installed
 pacman -Qdt # orphan dependencies
 pacman -Qo file                                   # find to which package file belongs
