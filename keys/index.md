@@ -99,6 +99,8 @@ atrm <jobNmb>                                  # remove job
 tar -xvf <fileToExtract <whereToExtract>          # extract archive to specific folder
 xclip -sel clip id_rsa.pub                        # copy file content to clipboard
 
+ln -s <pathToFile> <pathToLink> # create soft link
+
 pacman -Ql package_name                           # list files belonging to package
 pacman -Qi                                        # show installed packagies
 pacman -Qe # show only programs that you explicitly installed
