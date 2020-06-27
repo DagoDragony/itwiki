@@ -354,5 +354,7 @@ mtr -n www.google.lt # instead of traceroute, packet loss could indicate a probl
 whois 78.56.127.254 # shows extended info about ip owner
 
 iptraf-ng # traffic monitor and more, GUI program analog - wireshark
+/etc/sysconfig/network-scripts
+nmcli
+nmcli connection add save yes type ethernet ifname enp0s3 con-name enp0s3 ip4 10.0.2.11/24 gw4 10.0.2.1 ipv4.dns "10.0.2.1 8.8.8.8" # setting static ip
 ```
-
