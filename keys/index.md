@@ -301,6 +301,10 @@ firewall-cmd --runtime-to-permanent # save all configuration
 iptables-save # list rules
 iptables -I INPUT 5 -p tcp -m state --state NEW -m tcp --dport 23 -j ACCEPT; iptables-save
 
+
+
+
+sxiv -t *.jpg # 
 ```
 
 ## Sbt
