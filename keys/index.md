@@ -330,6 +330,7 @@ git push origin branchName
 git reset                  # unstage all staged files
 git add ^t                 # fzf autocomplete
 git restore <file>...      # restore/undo changes in file
+git merge master
 ```
 
 ## Network
