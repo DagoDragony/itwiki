@@ -1,5 +1,6 @@
 # Key bindings
 
+[i3](i3)
 [Vimwiki](Vimwiki)
 [Vim](Vim)
 [Top](Top)
