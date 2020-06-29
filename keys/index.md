@@ -291,21 +291,11 @@ curl wttr.in                                                        # get weathe
 last                                                                # show a listing of last logged in users
 lastb                                                               # all bad login attempts
 
-firewall-cmd --list-ports [--permanent]                             # list existing rules, permanent show rules that will be active after restart
-firewall-cmd --add-service=telnet
-firewall-cmd --remove-service=telnet
-firewall-cmd --list-services
-firewall-cmd --list-services [--permanent]
-firewall-cmd --runtime-to-permanent                                 # save all configuration
-
-iptables-save                                                       # list rules
-iptables -I INPUT 5 -p tcp -m state --state NEW -m tcp --dport 23 -j ACCEPT; iptables-save
-
-
-
-
 sxiv -t *.jpg                                                       # thumbnail
 ls *.jpg | sxiv -tio                                                # use it to select images and get selected imgs list
+
+xrdb -merge ~/.Xresources # load Xresources and merge with current
+xrdb -query -all # see default settins for your X11 apps
 ```
 
 ## Sbt
@@ -363,4 +353,15 @@ iptraf-ng # traffic monitor and more, GUI program analog - wireshark
 /etc/sysconfig/network-scripts
 nmcli
 nmcli connection add save yes type ethernet ifname enp0s3 con-name enp0s3 ip4 10.0.2.11/24 gw4 10.0.2.1 ipv4.dns "10.0.2.1 8.8.8.8" # setting static ip
+
+firewall-cmd --list-ports [--permanent]                             # list existing rules, permanent show rules that will be active after restart
+firewall-cmd --add-service=telnet
+firewall-cmd --remove-service=telnet
+firewall-cmd --list-services
+firewall-cmd --list-services [--permanent]
+firewall-cmd --runtime-to-permanent                                 # save all configuration
+
+iptables-save                                                       # list rules
+iptables -I INPUT 5 -p tcp -m state --state NEW -m tcp --dport 23 -j ACCEPT; iptables-save
+
 ```
