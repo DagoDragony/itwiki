@@ -22,10 +22,44 @@ Last address is Broadcast address 192.168.2.127
 Hosts are all between Network and Broadcast addresses
 
 ## DHCP
+Dynamic Host Configuration Protocol
 
 Used to configure the subnet mask, default gateway and dns server information on device
+Provides a centralized and automated method for configurint hosts when they connect to the network
 
-### Name search
+Obtaining ip process
+* DHCP Discover - send broadcast message to all network pc's in hope for dhcp server to respond
+  Others pcs ignore this message
+* DHCP Offer - when dhcp get message it sends back the message for the host with specific ip offer
+  If more offers received, host chooses first received
+* DHCP Request - host says ok to ip and sends request to DHCP Server
+* DHCP Acknowledgment - DHCP server sends the host back ip address, subnet mask, default gateway and the dns server
+  DHCP Server saves all ip addresses and Lease time, Lease time is the time host needs to renew his ip
+  address, otherwise it will return to available ip adresses pool
+
+`/etc/dhcpcd.conf` 
+Parts
+* DHCP Client - uses UDP 68
+* DHCP Server - uses UDP 67
+
+## NAT
+Network Address Translation
+
+* Overload (PAT - port address translation) - on of the most popular version of NAT
+  Router has NAT table
+	* it swaps local ip to public with the same port(increased by one if same is used)
+	* saves request From To info
+	* reformat package and send to destination
+	* when request is back it sends the package back to local ip
+* Dynamic NAT - 
+
+NAT converts private addresses to public addresses
+
+Private addresses - servers purpose of prolonging IPv4
+
+Internet provider usually gives 1 public address
+
+## Name search
 
 1. Type address
 2. Browser sends the request to OS
