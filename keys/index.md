@@ -45,6 +45,7 @@ journalctl --list-boots
 journalctl -S 01:00:00 -U 01:10:05 # show since until, can be with full dates
 journalctl --since 2017-12-20 --until 2017-12-24
 journalctl --since yesterday -u NetworkManager
+journalctl -e --unit systemd-udevd
 dmesg # logs that goes to journalctl too, but shorter in live time
 man systemd.journal-fields                     # fields to match by
 systemd-cat # systemd specific logging
