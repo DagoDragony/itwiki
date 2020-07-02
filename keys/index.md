@@ -135,7 +135,7 @@ ls | column
 ls -t                                                               # sort by time
 mv -t <dir> file1 file2 file4*.txt                                  # move multiple files
 
-
+grep -iRl "lenovo" ./ # find text in all files
 find . -type f -empty ! -name "*test.file*"                         # ! inverts name filter
 find / -type f -links 4                                             # find all files with 4 harldinks
 find /usr -inum 531003                                              # find files with inode 531003
