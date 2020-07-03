@@ -21,5 +21,6 @@
 [MavenRepositories](MavenRepositories)
 [LinuxInstallAutomation](LinuxInstallAutomation)
 [XServer](XServer)
+[Kubernetes](Kubernetes)
 
 `/proc` and `/sys` exists only in ram
