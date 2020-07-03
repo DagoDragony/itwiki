@@ -142,6 +142,7 @@ find / -type f -links 4                                             # find all f
 find /usr -inum 531003                                              # find files with inode 531003
 find /usr -samefile /usr/sbin/mkfs.ext3
 find ./ -type f -exec sed -i 's/foo/bar/g' {} \;                    # replace in all files foo to bar
+find . -type f -exec mv {} booksToReview \; # move files to folder
 
 w                                                                   # show logged users and what are they doing
 who                                                                 #
