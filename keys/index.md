@@ -7,6 +7,15 @@
 [atop](atop)
 [glances](glances)
 
+## Hotkeys
+
+```
+sudo showkey                      # print pressed key number
+xmodmap                           # displays and edits keyboard modifier map
+less /usr/include/X11/keysymdef.h # xorg key codes
+```
+
+
 ## Manual, Investigation
 
 ```
