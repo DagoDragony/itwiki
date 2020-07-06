@@ -92,7 +92,21 @@ Private addresses - servers purpose of prolonging IPv4
 
 Internet provider usually gives 1 public address
 
-# Name search
+
+# DNS
+Domain Name Services
+
+BIND (Berkeley Internet Name Domain) - most popular dns software
+`/etc/hosts` can be used as simple local name resolver
+
+`dig` cmd returns directly dns server results
+A - primary name resolver records
+CName - canonical name and is an alias for A
+NS - name server
+Authority - section that lists the authoritative name servers for the given url
+Additional - section that lists the A records for the name servers
+
+## Name search
 
 1. Type address
 2. Browser sends the request to OS
@@ -102,3 +116,5 @@ Internet provider usually gives 1 public address
 6. Root name server returns IP address of the authoritative name server for given address
 7. The browser uses the IP address to send a request for a web page which  is downloaded to browser
 
+## SOA
+Start Of Authority record
