@@ -25,7 +25,12 @@ curl -sS https://get.k8s.io | bash
 gcloud components install beta
 kubernetes/cluster/kube-up.sh
 
-$ gcloud components list
+gcloud components list
+kubectl cluster-info
+
+kubectl config view |grep token
+kubectl proxy --port=8001
+
 ```
 
 
