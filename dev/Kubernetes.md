@@ -1,5 +1,16 @@
 Kubernetes
 
+# CSP
+Clout Service Providers
+
+Almost all CSP offers hosted or managed kubernetes
+* AWS (Amazon Web Services) offers EKS (Elastic Container Service for Kubernetes)
+* GCP (Google Cloud Platform) offers GKE (Google Kubernetes Engine)
+* MS Azure offers AKS (Azure Container service)
+
+
+
+
 Needed packages to install
 ```
 docker
