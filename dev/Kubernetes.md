@@ -28,8 +28,10 @@ kubernetes/cluster/kube-up.sh
 gcloud components list
 kubectl cluster-info
 
+~/.kube/config
 kubectl config view |grep token
 kubectl proxy --port=8001
+http://localhost:8001/ui
 
 ```
 
