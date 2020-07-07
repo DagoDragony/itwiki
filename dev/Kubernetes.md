@@ -26,13 +26,19 @@ gcloud components install beta
 kubernetes/cluster/kube-up.sh
 
 gcloud components list
-kubectl cluster-info
+kubectl cluster-info [dump]
 
 ~/.kube/config
 kubectl config view |grep token
 kubectl proxy --port=8001
-http://localhost:8001/ui
 
+kubectl get nodes
+kubectl get events
+kubectl get services
+kubectl get pods
+
+gcloud compute ssh --zone "us-central1-b" "kubernetes-master"
+docker container ls --format 'table {{.Image}}\t{{.Status}}' 
 ```
 
 
