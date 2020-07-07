@@ -25,7 +25,7 @@ curl -sS https://get.k8s.io | bash
 gcloud components install beta
 kubernetes/cluster/kube-up.sh
 
-
+$ gcloud components list
 ```
 
 
