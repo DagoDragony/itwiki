@@ -1,11 +1,16 @@
 Kubernetes
 
+For learning and experimenting locally minicube can be used
+Limitation is that it runs only on 1 node
+
 # CSP
 Clout Service Providers
 
 Almost all CSP offers hosted or managed kubernetes
 * AWS (Amazon Web Services) offers EKS (Elastic Container Service for Kubernetes)
-* GCP (Google Cloud Platform) offers GKE (Google Kubernetes Engine)
+* GCP (Google Cloud Platform)
+	* GKE (Google Kubernetes Engine)
+	* GCE (Google Compute Engine)
 * MS Azure offers AKS (Azure Container service)
 
 # GCP
@@ -36,11 +41,20 @@ kubectl get nodes
 kubectl get events
 kubectl get services
 kubectl get pods
+kubectl get pods --namespace=kube-system
 
 gcloud compute ssh --zone "us-central1-b" "kubernetes-master"
 docker container ls --format 'table {{.Image}}\t{{.Status}}' 
+
+kubernetes/cluster/kube-up.sh # tear down the cluster
 ```
 
+# Minicube
+
+```
+kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.4 --port=8080
+kubectl expose deployment hello-minikube --type=NodePort
+```
 
 
 Needed packages to install
