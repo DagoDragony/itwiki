@@ -68,6 +68,11 @@ kubectl expose deployment hello-minikube --type=NodePort
 minikube dashboard
 ```
 
+# Patterns
+
+* Sidecar - app container is unaware of the sidecar container and just goes it's business
+* Ambassador pattern - represent remote service as if it was local
+* Adapter pattern - about standardizing output from the main application container
 
 Needed packages to install
 ```
