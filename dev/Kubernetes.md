@@ -3,6 +3,8 @@ Kubernetes
 For learning and experimenting locally minicube can be used
 Limitation is that it runs only on 1 node
 
+https://labs.play-with-k8s.com/ - k8s sandbox/playground
+
 # Create Kubernetes node from zero
 
 ```
