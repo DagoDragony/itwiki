@@ -71,6 +71,13 @@ minikube dashboard
 
 kubectl get componentstatuses # check status of etcd and others
 kubectl get nodes -o json | less
+
+kubectl create -f nodejs-pod.yaml
+kubectl describe pods/node-js-pod
+kubectl get pod node-js-pod --template={{.status.podIP}}
+kubectl exec node-js-pod -- curl `kubectl get pod node-js-pod --template={{.status.podIP}}`
+kubectl exec -it node-js-pod -- /bin/bash
+kubectl exec node-js-pod -- ls / # dashes in case command has same args as kubectl
 ```
 
 # Patterns
