@@ -3,6 +3,14 @@ Kubernetes
 For learning and experimenting locally minicube can be used
 Limitation is that it runs only on 1 node
 
+# Create Kubernetes node from zero
+
+```
+kubeadm init    # master
+kubeadm join .. # for slaves
+```
+
+
 # CSP
 Clout Service Providers
 
@@ -52,8 +60,12 @@ kubernetes/cluster/kube-up.sh # tear down the cluster
 # Minicube
 
 ```
+minicube start
+
 kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.4 --port=8080
 kubectl expose deployment hello-minikube --type=NodePort
+
+minikube dashboard
 ```
 
 
