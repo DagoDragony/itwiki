@@ -78,6 +78,14 @@ kubectl get pod node-js-pod --template={{.status.podIP}}
 kubectl exec node-js-pod -- curl `kubectl get pod node-js-pod --template={{.status.podIP}}`
 kubectl exec -it node-js-pod -- /bin/bash
 kubectl exec node-js-pod -- ls / # dashes in case command has same args as kubectl
+
+kubectl create -f nodejs-controller.yaml
+kubectl create -f nodejs-rc-service.yaml
+
+kubectl get pods
+kubectl describe pod/node-js-p484w
+minikube ssh # ssh to node with pods(minikube supports only 1 node)
+
 ```
 
 # Patterns
