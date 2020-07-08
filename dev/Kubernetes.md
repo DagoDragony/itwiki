@@ -68,6 +68,9 @@ kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.4 --port=8080
 kubectl expose deployment hello-minikube --type=NodePort
 
 minikube dashboard
+
+kubectl get componentstatuses # check status of etcd and others
+kubectl get nodes -o json | less
 ```
 
 # Patterns
@@ -76,6 +79,14 @@ minikube dashboard
 * Ambassador pattern - represent remote service as if it was local
 * Adapter pattern - about standardizing output from the main application container
 * Multinode
+
+# Cluster nodes
+master nodes components only run on a subset of the Kubernetes cluster, but the node  components run
+everywhere
+
+* Kubelet
+* Kube-proxy
+* Container runtime
 
 Needed packages to install
 ```
