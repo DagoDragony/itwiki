@@ -10,6 +10,8 @@ Parts
 2. Docker Server(linux systemd service docker)
 3. containerd(container runtime(overseen by CNCF, and fits OCI) that is used by docker)
 
+Registries - image servers (like docker hub)
+
 ```
 yay -S docker docker-compose
 systemctl enable docker
@@ -36,7 +38,18 @@ docker container inspect c9
 
 docker container run --detach --publish 8088:80 diamol/ch02-hello-diamol-web
 docker container stats 96 # show live stats
+docker exec -it 6ba /bin/bash # run shell in container
+docker container cp index.html 86b:/usr/local/apache2/htdocs/index.html # copy local file into container
 
+docker image pull diamol/ch03-web-ping
+https://hub.docker.com/r/diamol/ch03-web-ping
 
+docker container run -d --name web-ping diamol/ch03-web-ping
+docker container logs web-ping
+
+docker container run --env TARGET=http://www.google.com diamol/ch03-web-ping # no detach, logs are shown directly
+
+docker image build --tag web-ping . # to build docker image
+docker image ls 'w*' # list image cache
 ```
 
