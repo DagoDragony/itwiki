@@ -64,10 +64,11 @@ kubernetes/cluster/kube-up.sh # tear down the cluster
 ```
 minicube start
 
+minikube dashboard
+
 kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.4 --port=8080
 kubectl expose deployment hello-minikube --type=NodePort
 
-minikube dashboard
 
 kubectl get componentstatuses # check status of etcd and others
 kubectl get nodes -o json | less
