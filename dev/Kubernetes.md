@@ -84,7 +84,12 @@ kubectl create -f nodejs-rc-service.yaml
 
 kubectl get pods
 kubectl describe pod/node-js-p484w
+
 minikube ssh # ssh to node with pods(minikube supports only 1 node)
+	sudo docker ps --filter="name=node-js"
+	sudo docker stop <node-express container id>
+	sudo docker rm <container id>
+	sudo docker ps --filter="name=node-js"
 
 ```
 
