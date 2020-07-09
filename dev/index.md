@@ -22,5 +22,6 @@
 [LinuxInstallAutomation](LinuxInstallAutomation)
 [XServer](XServer)
 [Kubernetes](Kubernetes)
+[Drone_CI](Drone_CI)
 
 `/proc` and `/sys` exists only in ram
