@@ -51,5 +51,9 @@ docker container run --env TARGET=http://www.google.com diamol/ch03-web-ping # n
 
 docker image build --tag web-ping . # to build docker image
 docker image ls 'w*' # list image cache
+
+docker image history web-ping
+docker image ls
+docker system df # show how much actually docker images use disk
 ```
 
