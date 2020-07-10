@@ -12,6 +12,10 @@ Parts
 
 Registries - image servers (like docker hub)
 
+To create/modify docker container there are 2 ways
+* use `Dockerfile`
+* go to docker container, modify it and save
+
 ```
 yay -S docker docker-compose
 systemctl enable docker
@@ -55,5 +59,12 @@ docker image ls 'w*' # list image cache
 docker image history web-ping
 docker image ls
 docker system df # show how much actually docker images use disk
+
+# mofify docker container and save modifications to image
+docker container run -it --name ch03lab diamol/ch03-lab
+echo Elton >> ch03.txt
+exit
+docker container commit ch03lab ch03-lab-soln
+docker container run ch03-lab-soln cat ch03.txt
 ```
 
