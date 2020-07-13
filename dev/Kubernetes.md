@@ -94,6 +94,11 @@ minikube ssh # ssh to node with pods(minikube supports only 1 node)
 
 ```
 
+```
+kubectl config set-context --current --namespace=my-namespace
+```
+
+
 # Patterns
 
 * Sidecar - app container is unaware of the sidecar container and just goes it's business
