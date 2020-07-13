@@ -1,4 +1,4 @@
-# Key bindings
+# minikube Key bindings
 
 [i3](i3)
 [Vimwiki](Vimwiki)
@@ -361,6 +361,7 @@ tcpdump -i enp0s3
 mtr -n www.google.lt # instead of traceroute, packet loss could indicate a problem
 whois 78.56.127.254 # shows extended info about ip owner
 dig # dns lookup utility, shows all ips that dns routes to
+host 
 
 iptraf-ng # traffic monitor and more, GUI program analog - wireshark
 /etc/sysconfig/network-scripts
