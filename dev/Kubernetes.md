@@ -96,6 +96,13 @@ minikube ssh # ssh to node with pods(minikube supports only 1 node)
 
 ```
 kubectl config set-context --current --namespace=my-namespace
+kubectl apply -f busybox-pod.yaml
+kubectl delete po busybox
+kubectl get pod busybox -o wide
+kubectl describe pod busybox # get pod info
+kubectl get po busybox -o jsonpath={..image} # get running container image
+kubectl edit pod busybox # edit online, imperative way(not recomended), upon save changes will be synchronized
+kubectl delete -f busybox-pod.yaml # delete everything that we declared by given .yaml
 ```
 
 
