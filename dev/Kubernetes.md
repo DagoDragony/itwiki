@@ -157,6 +157,13 @@ kubectl get configmap # list config maps
 kubectl get configmap configName -o yaml
 ```
 
+# Network Policies
+
+```
+kubectl create -f nginx-policy.yaml
+```
+
+
 
 Needed packages to install
 ```
