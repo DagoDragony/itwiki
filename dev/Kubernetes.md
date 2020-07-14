@@ -149,6 +149,15 @@ everywhere
 kubectl describe pod nginx-7fd7896f47-8hwbg
 ```
 
+# ConfigMap
+
+```
+kubectl apply -f nginx-config.yaml
+kubectl get configmap # list config maps
+kubectl get configmap configName -o yaml
+```
+
+
 Needed packages to install
 ```
 docker
