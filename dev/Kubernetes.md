@@ -3,6 +3,11 @@ Kubernetes
 For learning and experimenting locally minicube can be used
 Limitation is that it runs only on 1 node
 
+* Init containers
+* Deployment - highges level of pod manager
+* ReplicaSet - responsible for keebing pod number
+* pod
+
 https://labs.play-with-k8s.com/ - k8s sandbox/playground
 
 # Create Kubernetes node from zero
@@ -103,6 +108,19 @@ kubectl describe pod busybox # get pod info
 kubectl get po busybox -o jsonpath={..image} # get running container image
 kubectl edit pod busybox # edit online, imperative way(not recomended), upon save changes will be synchronized
 kubectl delete -f busybox-pod.yaml # delete everything that we declared by given .yaml
+
+kubectl scale --replicas=2 deployment/nginx # imperative(not recomended) way
+kubectl delete po -o wide # delete pod, however if deployment defined pods, new is started right after
+
+# relicasets manages number of pods
+# if you want your pod not to be restarted after kill, you need to delete replicaset
+kubectl get replicaset
+kubectl delete rs nginx-7b8964db65
+# however after kill we see that is was recreated, it's because deployment manages replicasets
+kubectl get replicaset
+
+kubectl get deploy # get deployment list
+kubectl delete deploy nginx # deletes all that is with deployment
 ```
 
 
@@ -121,11 +139,22 @@ everywhere
 * Kube-proxy
 * Container runtime
 
+# Init Containers
+
+* Prepare env for containers(i.e. apply sysctl params, download files, etc)
+* Do not start containers until other external services are available
+
+```
+# init cotainers won't be visible in get po, only here
+kubectl describe pod nginx-7fd7896f47-8hwbg
+```
+
 Needed packages to install
 ```
 docker
 kubectl
-conntrack ```
+conntrack 
+```
 
 ```
 docker --version
