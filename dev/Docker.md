@@ -141,7 +141,29 @@ echo "https://hub.docker.com/r/<dockerId>/image-gallery/tags"
 
 # Persistent Storage
 
+* Dockerfile VOLUME
+  Volumes are created per container
+  If you want to use volume from other container, you can do it by running with --volumes-from <containerName>
+* Named volumes - create by docker volume create <volumeName>
+* Bind mounts - mounts folder in host to docker container
+  Can be used for optimizations like SSD or safety RAID etc.
+
+
 ```
+docker container run --name todo1 -d -p 8010:80 diamol/ch06-todo-list
+docker container inspect --format '{{.Mounts}}' todo1
 docker volume ls
+
+docker volume create todo-list # named volume
+docker container run -d -p 8011:80 -v todo-list:/data --name todo-v1 diamol/ch06-todo-list
+docker container rm -f todo-v1
+docker container run -d -p 8011:80 -v todo-list:/data --name todo-v2 diamol/ch06-todo-list:v2
+# after recreation all data is still in same persistent named volume
+
+source="$(pwd)/datbases" && target='/data'
+mkdir ./databases
+docker container run --mount type=bind,source=$source,target=$target -d -p 8012:80 diamol/ch06-todo-list
+curl http://localhost:8012
+ls ./databases
 ```
 
