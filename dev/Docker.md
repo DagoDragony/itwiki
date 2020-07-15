@@ -68,6 +68,11 @@ docker container run ch03-lab-soln cat ch03.txt
 
 docker network create nat
 docker container run --name iotd -d -p 800:80 --network nat image-of-the-day
+
+docker -dit web-ping
+docker atach web-ping
+
+docker network inspect bridge | less
 ```
 
 # RUN, CMD, ENTRYPOINT
