@@ -129,7 +129,15 @@ Forms
    ```
 2. Shell - ignores any CMD or docker run command line args(not like Exec)
 
+# Push docker images
 
+```
+docker login --username <dockerId> # loging to default docker registry
+docker image tag image-gallery <dockerId>/image-gallery:v1
+docker image ls --filter reference=image-gallery --filter reference='*/image-gallery'
+docker image push <dockerId>/image-gallery:v1
+echo "https://hub.docker.com/r/<dockerId>/image-gallery/tags"
+```
 
   
   
