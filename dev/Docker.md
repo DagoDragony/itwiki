@@ -147,6 +147,14 @@ echo "https://hub.docker.com/r/<dockerId>/image-gallery/tags"
 * Named volumes - create by docker volume create <volumeName>
 * Bind mounts - mounts folder in host to docker container
   Can be used for optimizations like SSD or safety RAID etc.
+  
+Storage types
+* Writeable layer - pefect for short-term storage. Unique to container, gone when container is removed
+* Local bind mounts - for sharing data between host and container. Fits for source file changes on local pc
+* Distributed bind mounts -for sharing data between network storage and containers. Has various limitations
+* Volume mounts - for sharing data between the container and a storage object, that is managed by docker
+* Image layers - these present the initial filesystem for the container.
+  Stacked overriden by earlier layers, layers are read-only, can't be shared between containers
 
 
 ```
