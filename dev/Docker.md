@@ -65,5 +65,66 @@ echo Elton >> ch03.txt
 exit
 docker container commit ch03lab ch03-lab-soln
 docker container run ch03-lab-soln cat ch03.txt
+
+docker network create nat
+docker container run --name iotd -d -p 800:80 --network nat image-of-the-day
 ```
 
+# RUN, CMD, ENTRYPOINT
+
+* RUN - executes cmds in a new layer and creates a new image. I.e installing software packages
+* CMD - set default command and/or parameters, which can be overwritten from cli when docker runs
+* ENTRYPOINT - makes docker file executable
+
+Forms
+* shell (/bin/sh -c <cmd>
+  ```
+  RUN apt-get install python3
+  CMD echo "Hello world"
+  ENTRYPOINT echo "Hello world"
+  ...
+  $ Hello, John Dow
+  ```
+* exec (<instruction ["executable", "param1", "param2", ...] prefered for CMD and ENTRYPOINT
+  ```
+  RUN ["apt-get", "install", "python3"]
+  CMD ["/bin/echo", "Hello world"]
+  ENTRYPOINT ["/bin/echo", "Hello world"]
+  ...
+  $ Hello, $name
+  ```
+  
+## CMD
+
+Forms
+1. `CMD ["executable","param1","param2"]` (exec form, preferred)
+2. `CMD ["param1","param2"]` (sets additional default parameters for ENTRYPOINT in exec form)
+3. `CMD command param1 param2` (shell form)
+
+```
+CMD echo "Hello world"
+...
+# cmd is ignored when docker container runs with command line parameters
+docker run -it <image> /bin/bash # CMD is ignored and /bin/bash is ran instead
+```
+
+## ENTRYPOINT
+
+Forms
+1. Exec
+   ```
+   ENTRYPOINT ["/bin/echo", "Hello"]
+   CMD ["world"]
+   
+   docker run -it <image>
+   $ Hello world
+   
+   docker run -it <image> John
+   $ Hello John
+   ```
+2. Shell - ignores any CMD or docker run command line args(not like Exec)
+
+
+
+  
+  
