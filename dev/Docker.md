@@ -175,3 +175,15 @@ curl http://localhost:8012
 ls ./databases
 ```
 
+# Multiple Docker Containers Run
+
+docker-compose.yml
+
+```
+docker-compose up --detach --scale iotd=3
+docker-compsoe logs --tail=1 iotd
+docker-compose stop
+docker-compose start
+docker container ls
+```
+
