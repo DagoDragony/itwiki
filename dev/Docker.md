@@ -139,5 +139,9 @@ docker image push <dockerId>/image-gallery:v1
 echo "https://hub.docker.com/r/<dockerId>/image-gallery/tags"
 ```
 
-  
-  
+# Persistent Storage
+
+```
+docker volume ls
+```
+
