@@ -187,3 +187,10 @@ docker-compose start
 docker container ls
 ```
 
+# various
+
+```
+docker search -s 5 mysql # retuns images with 5 stars or more
+
+```
+
