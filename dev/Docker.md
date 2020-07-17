@@ -191,6 +191,7 @@ docker container ls
 
 ```
 docker search -s 5 mysql # retuns images with 5 stars or more
+docker serach --no-trunc mysql
 
 ```
 
