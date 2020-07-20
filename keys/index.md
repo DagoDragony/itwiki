@@ -107,7 +107,8 @@ atrm <jobNmb>                                  # remove job
 ## Various
 
 ```
-tar -xvf <fileToExtract <whereToExtract>                            # extract archive to specific folder
+tar -czvf <tarFile> <folder/fileToArchive>
+tar -xvf <fileToExtract [<whereToExtract>]                           # extract archive to specific folder
 xclip -sel clip id_rsa.pub                                          # copy file content to clipboard
 
 ln -s <pathToFile> <pathToLink>                                     # create soft link
