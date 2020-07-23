@@ -8,6 +8,7 @@
 [Remote Connection](Remote-Connection)
 [Terminal](Terminal)
 [Python](Python)
+[Bash](Bash)
 [OAuth](OAuth)
 [Linux Administration](Linux-Administration)
 [Linux Boot Process](Linux-Boot-Process)
