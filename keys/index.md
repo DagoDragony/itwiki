@@ -1,4 +1,4 @@
-# minikube Key bindings
+# Key bindings
 
 [i3](i3)
 [Vimwiki](Vimwiki)
