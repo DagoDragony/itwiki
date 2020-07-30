@@ -25,5 +25,6 @@
 [Kubernetes](Kubernetes)
 [Drone_CI](Drone_CI)
 [Docker](Docker)
+[Various](Various)
 
 `/proc` and `/sys` exists only in ram
