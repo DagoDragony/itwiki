@@ -181,6 +181,7 @@ cat test.pdf > /dev/usb/lp0                                         # print dire
 lscpu
 lsblk
 df -h
+du -sh * | sort -h
 dumpe2fs /dev/sda1                                                  # lots of deep info about filesystem (cylinder group info, inodes, blocks etc
 e2label /dev/sda1 MyBoot                                            # give label to disk
 fsck                                                                # for fixing disk and getting report, if any problems, systemd runs it automatically
