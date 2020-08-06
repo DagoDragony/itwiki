@@ -107,6 +107,11 @@ atrm <jobNmb>                                  # remove job
 ## Various
 
 ```
+rclone lsd remote: # list directories in top level
+rclone ls gdrive: # list all the files in your drive
+rclone copy /home/source remote:backup
+rclone sync /tmp/backup gdrive:backup
+
 tar -czvf <tarFile> <folder/fileToArchive>
 tar -xvf <fileToExtract [<whereToExtract>]                           # extract archive to specific folder
 xclip -sel clip id_rsa.pub                                          # copy file content to clipboard
