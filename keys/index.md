@@ -316,6 +316,8 @@ ls *.jpg | sxiv -tio                                                # use it to 
 
 xrdb -merge ~/.Xresources # load Xresources and merge with current
 xrdb -query -all # see default settins for your X11 apps
+
+scanimage --format=png --output-file Invoice_200_1.png --progress
 ```
 
 ## Sbt
