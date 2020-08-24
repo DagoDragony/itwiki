@@ -83,6 +83,8 @@ x - view file with associated program
 d - make directory
 % - open a new file in netrw current dir
 mz - compress/decompress
+y - copy
+p - paste
 ```
 
 ## Vimdiff
