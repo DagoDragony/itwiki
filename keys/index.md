@@ -332,6 +332,8 @@ sbt "inspect tree" | less -R
 
 sbt "~compile" # recompile on code change
 sbt "show fullResolvers" # show all resolvers of project
+
+sbt "runMain org.may.path"
 ```
 
 ## Zathura
