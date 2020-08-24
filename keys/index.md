@@ -6,6 +6,7 @@
 [Top](Top)
 [atop](atop)
 [glances](glances)
+[scala](scala)
 
 ## Hotkeys
 
