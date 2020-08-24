@@ -59,6 +59,11 @@ gcap           " comment out a paragraph
 <leader>ws     " see expanded text of the line
 @:             " repeat last command (useful after Rg <search>
 
+# Nerdree
+mc " copy file under cursor
+F2 " toogle
+
+# Netrw
 :Explore " netwr
 :Sexplore "
 :Vexplore "
