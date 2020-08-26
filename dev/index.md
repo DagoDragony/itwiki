@@ -7,6 +7,7 @@
 [Troubleshooting](Troubleshooting)
 [Remote Connection](Remote-Connection)
 [Terminal](Terminal)
+[Scala](Scala)
 [Python](Python)
 [Bash](Bash)
 [OAuth](OAuth)
