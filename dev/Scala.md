@@ -7,6 +7,10 @@ val listBuffer = ListBuffer.empty[String]
 listBuffer += "one"
 listBuffer += "two"
 
+val stack = Stack.empty[String]
+stack.push("test")
+stack.pop()
+
 ```
 
 ```
