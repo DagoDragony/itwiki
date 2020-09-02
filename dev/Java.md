@@ -13,3 +13,11 @@ val fileName = args(0)
 scanner.nextInt()
 
 Math.pow(2, 3)
+
+Calendar calendar = Calendar.getInstance();
+calendar.set(2001, 12, 32);
+calendar.get(Calendar.DAY_OF_WEEK);
+
+NumberFormat num = NumberFormat.getInstance(Locale.CHINA);
+num.setMinimumFractionDigits(3);
+String result = num.format(23);
