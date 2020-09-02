@@ -18,6 +18,11 @@ Calendar calendar = Calendar.getInstance();
 calendar.set(2001, 12, 32);
 calendar.get(Calendar.DAY_OF_WEEK);
 
-NumberFormat num = NumberFormat.getInstance(Locale.CHINA);
-num.setMinimumFractionDigits(3);
-String result = num.format(23);
+NumberFormat usFormat = NumberFormat.getCurrencyInstance(Locale.US);
+usFormat.format(2.129) // $2.13
+
+NumberFormat usFormat = NumberFormat.getInstance(Locale.ENGLISH);
+usFormat.setRoundingMode(RoundingMode.HALF_UP);
+usFormat.setMaximumFractionDigits(2);
+usFormat.setMinimumFractionDigits(2);
+String us = "$" + usFormat.format(0.999);
