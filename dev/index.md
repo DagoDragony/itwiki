@@ -8,6 +8,7 @@
 [Remote Connection](Remote-Connection)
 [Terminal](Terminal)
 [Scala](Scala)
+[Java](Java)
 [Python](Python)
 [Bash](Bash)
 [OAuth](OAuth)
