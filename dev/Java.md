@@ -1,5 +1,8 @@
 Java
 
+"word".length()
+java.util.Collections.sort(listOfCountryNames)
+
 System.out.println()
 System.out.printf("%-15s%03d%n", "cpp", 10);
 
