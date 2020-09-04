@@ -3,6 +3,12 @@ Java
 "word".length()
 java.util.Collections.sort(listOfCountryNames)
 
+StringBuilder A=new StringBuilder("afsdfasd");
+A.setCharAt(0, Character.toUpperCase(A.charAt(0)));
+
+"someString.substring(0, 1).toUpperCase()
+"someString".substring(1)
+
 System.out.println()
 System.out.printf("%-15s%03d%n", "cpp", 10);
 
