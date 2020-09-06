@@ -46,6 +46,9 @@ words.computeIfPresent("hello", (k, v) -> v + 1);
 competitorsHashMap.put(word, competitorsHashMap.get(word) + 1); // updates existing value too
 System.out.println(words.get("hello"));
 
+LinkedList<String> list = new LinkedList<>();
+list.add("one");
+
 for (Map.Entry<String, String> entry : map.entrySet()) {
 	System.out.println(entry.getKey() + " = " + entry.getValue());
 }
