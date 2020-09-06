@@ -35,3 +35,17 @@ usFormat.setRoundingMode(RoundingMode.HALF_UP);
 usFormat.setMaximumFractionDigits(2);
 usFormat.setMinimumFractionDigits(2);
 String us = "$" + usFormat.format(0.999);
+
+String[] arr = new String[] { "one", "two"};
+for(String m: arr)
+  System.out.println(m);
+
+Map<String, Integer> words = new HashMap<>();
+words.put("hello", 3);
+words.computeIfPresent("hello", (k, v) -> v + 1);
+competitorsHashMap.put(word, competitorsHashMap.get(word) + 1); // updates existing value too
+System.out.println(words.get("hello"));
+
+for (Map.Entry<String, String> entry : map.entrySet()) {
+	System.out.println(entry.getKey() + " = " + entry.getValue());
+}
