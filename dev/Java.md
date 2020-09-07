@@ -1,9 +1,11 @@
 Java
 
 "word".length()
+"word".charAt()
 java.util.Collections.sort(listOfCountryNames)
 
 StringBuilder A=new StringBuilder("afsdfasd");
+new StringBuilder("word").reverse().toString()
 A.setCharAt(0, Character.toUpperCase(A.charAt(0)));
 
 "someString.substring(0, 1).toUpperCase()
@@ -48,6 +50,7 @@ System.out.println(words.get("hello"));
 
 LinkedList<String> list = new LinkedList<>();
 list.add("one");
+list.get(i); // very ineffective
 
 for (Map.Entry<String, String> entry : map.entrySet()) {
 	System.out.println(entry.getKey() + " = " + entry.getValue());
