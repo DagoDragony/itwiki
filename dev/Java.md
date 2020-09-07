@@ -17,6 +17,17 @@ int[] arr = new int[]{ 1, 2, 3, 4 };
 Character.toLowerCase('A')
 Arrays.sort(new Char[]{ 'b', 'c', 'a' });
 
+Stack<String> stack = new Stack<>();
+stack.push("word");
+while(!stack.isEmpty())
+	stack.pop();
+
+LinkedList<String> queue = new LinkedList<>();
+queue.add("word");
+while(!queue.isEmpty())
+	queue.remove();
+
+
 System.out.println()
 System.out.printf("%-15s%03d%n", "cpp", 10);
 
