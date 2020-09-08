@@ -14,6 +14,11 @@ A.setCharAt(0, Character.toUpperCase(A.charAt(0)));
 int[] arr = new int[23];
 int[] arr = new int[]{ 1, 2, 3, 4 };
 
+Pattern pattern = Pattern.compile("w3schools", Pattern.CASE_INSENSITIVE);
+Matcher matcher = pattern.matcher("Visit W3Schools!");
+boolean matchFound = matcher.find();
+boolean b = m.matches();  
+
 Character.toLowerCase('A')
 Arrays.sort(new Char[]{ 'b', 'c', 'a' });
 
