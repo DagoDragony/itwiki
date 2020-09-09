@@ -21,5 +21,7 @@ elif [[ $a == $b || $b == $c || $c == $a ]]; then
 else
     echo "SCALENE"
 fi
+
+echo "(23*5)/5" | bc
 ```
 
