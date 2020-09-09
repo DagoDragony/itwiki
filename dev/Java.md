@@ -16,7 +16,10 @@ int[] arr = new int[]{ 1, 2, 3, 4 };
 
 Pattern pattern = Pattern.compile("w3schools", Pattern.CASE_INSENSITIVE);
 Matcher matcher = pattern.matcher("Visit W3Schools!");
+
 boolean matchFound = matcher.find();
+m.group(0)
+
 boolean b = m.matches();  
 
 Character.toLowerCase('A')
