@@ -22,6 +22,7 @@ else
     echo "SCALENE"
 fi
 
-echo "(23*5)/5" | bc
+echo "(23*5)/5" | bc 
+echo "scale = 4; 5+50*3/20 + (19*2)/7" | bc -l | xargs printf "%.3f\n"
 ```
 
