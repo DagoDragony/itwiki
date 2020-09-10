@@ -14,6 +14,12 @@ do
 	echo "$server"
 done
 
+for i in $(seq 1 $count)
+do
+    read number
+    sum=$(( $sum+$number ))
+done
+
 if [[ $a == $b && $a == $c ]]; then
     echo "EQUILATERAL"
 elif [[ $a == $b || $b == $c || $c == $a ]]; then
@@ -22,7 +28,7 @@ else
     echo "SCALENE"
 fi
 
-echo "(23*5)/5" | bc 
-echo "scale = 4; 5+50*3/20 + (19*2)/7" | bc -l | xargs printf "%.3f\n"
+# expressions
+echo "5+50*3/20 + (19*2)/7" | bc -l | xargs printf "%.3f\n"
 ```
 
