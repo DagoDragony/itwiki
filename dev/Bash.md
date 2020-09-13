@@ -8,6 +8,7 @@ arrayVar+=(${anotherAray[@]})
 
 echo $variable
 echo ${arrayVar[@]} # print all variable 
+[[ ${myArray[*]} =~ $column ]] && printf "1" || printf "0" # check if array contains value
 
 for server in "${servers[@]}"
 do
@@ -19,6 +20,8 @@ do
     read number
     sum=$(( $sum+$number ))
 done
+
+(( $column % 50 == 0 )) && printf "one"
 
 if [[ $a == $b && $a == $c ]]; then
     echo "EQUILATERAL"
