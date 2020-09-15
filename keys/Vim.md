@@ -144,6 +144,7 @@ ds        " " remove surounding "
 <Ctrl+r>  " redo
 shift-tab " fzf select multiple files
 :set list " show invisible symbols
+:<C-f>    " open command line search and run with edit
 ```
 
 
