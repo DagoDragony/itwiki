@@ -62,8 +62,14 @@ gcap           " comment out a paragraph
 /<C-r>=&include " show include pattern for current context search
 :set suffixesadd? " extension that is added to autosearch import
 :set includeexpr? " multiple paths to match possible search places
-:ij " include search based jump
+:ij <keyword> " include search based jump
 :checkpath! " all imported files
+:set define?
+:dj <keyword> " go only to specific keywors that was defined by define pattern
+
+:tj <keyword> " go to ctag, when include search fails, use ctags
+:ptj <keyword> " preview tag jump
+
 
 # Nerdree
 mc " copy file under cursor
