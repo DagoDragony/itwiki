@@ -86,7 +86,7 @@ qf - display information on file
 R - rename file or directory
 x - view file with associated program
 d - make directory
-% - open a new file in netrw current dir
+% - create and open a new file in netrw current dir
 mz - compress/decompress
 ```
 
