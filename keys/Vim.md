@@ -59,6 +59,12 @@ gcap           " comment out a paragraph
 <leader>ws     " see expanded text of the line
 @:             " repeat last command (useful after Rg <search>
 
+/<C-r>=&include " show include pattern for current context search
+:set suffixesadd? " extension that is added to autosearch import
+:set includeexpr? " multiple paths to match possible search places
+:ij " include search based jump
+:checkpath! " all imported files
+
 # Nerdree
 mc " copy file under cursor
 F2 " toogle
