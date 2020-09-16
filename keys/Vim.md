@@ -70,6 +70,9 @@ gcap           " comment out a paragraph
 :tj <keyword> " go to ctag, when include search fails, use ctags
 :ptj <keyword> " preview tag jump
 
+:set makeprg? " make command for current file context
+
+
 
 # Nerdree
 mc " copy file under cursor
