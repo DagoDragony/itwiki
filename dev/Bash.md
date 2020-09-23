@@ -65,5 +65,7 @@ fi
 echo "5+50*3/20 + (19*2)/7" | bc -l | xargs printf "%.3f\n"
 
 grep -iwE 'th(e|at|en|ose)'
+sed -e 's/\<the\>/this/' # change word the to this
+sed 's/\(thy\)/{\1}/gI' # case insensitive global thy wrap
 ```
 
