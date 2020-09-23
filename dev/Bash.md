@@ -63,5 +63,7 @@ fi
 
 # expressions
 echo "5+50*3/20 + (19*2)/7" | bc -l | xargs printf "%.3f\n"
+
+grep -iwE 'th(e|at|en|ose)'
 ```
 
