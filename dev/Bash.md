@@ -6,6 +6,8 @@ arrayVar=(1 2 5 7 4)
 arrayVar+=("someVal")
 arrayVar+=(${anotherAray[@]})
 echo ${someString:2:1} # from 3rd char get 1
+echo ${arr[*]:3:5}
+echo ${arr[@]/*[aA]*/}
 echo $someString| cut -c3,4
 echo $someString| cut -c1-7
 IFS="" && echo $sentence | cut -f1-3
@@ -13,13 +15,20 @@ IFS="" && echo $sentence | cut -f1-3
 head -n20 </dev/stdin
 tail -c20 </dev/stdin
 
-cat /dev/stdin | tr "()" "[]"
-cat /dev/stdin | tr "a-z" "A-Z"
-cat /dev/stdin | tr -s " " # replace multiple aquirances with one
+tr "()" "[]"
+tr "a-z" "A-Z"
+tr -s " " # replace multiple aquirances with one
 
 sort -r # reverse sort
 sort -t$'\t' -k2 -rn # sort numeric reverse by field 2
+
+uniq -u # only unique lines(if line has duplicate, it is skipped at all)
+
+paste -s
+paste - - - # join in groups of 3
+paste -sd '\t\t\n' # as above
  
+
 echo $variable
 echo ${arrayVar[@]} # print all variable 
 [[ ${myArray[*]} =~ $column ]] && printf "1" || printf "0" # check if array contains value
