@@ -10,8 +10,16 @@ echo $someString| cut -c3,4
 echo $someString| cut -c1-7
 IFS="" && echo $sentence | cut -f1-3
 
-head -20 </dev/stdin
+head -n20 </dev/stdin
+tail -c20 </dev/stdin
 
+cat /dev/stdin | tr "()" "[]"
+cat /dev/stdin | tr "a-z" "A-Z"
+cat /dev/stdin | tr -s " " # replace multiple aquirances with one
+
+sort -r # reverse sort
+sort -t$'\t' -k2 -rn # sort numeric reverse by field 2
+ 
 echo $variable
 echo ${arrayVar[@]} # print all variable 
 [[ ${myArray[*]} =~ $column ]] && printf "1" || printf "0" # check if array contains value
