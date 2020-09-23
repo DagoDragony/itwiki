@@ -1,13 +1,20 @@
 Bash
 
 ```
+cat </dev/stdin
+arr=($(cat))
 variable=value
 arrayVar=(1 2 5 7 4)
 arrayVar+=("someVal")
 arrayVar+=(${anotherAray[@]})
 echo ${someString:2:1} # from 3rd char get 1
 echo ${arr[*]:3:5}
-echo ${arr[@]/*[aA]*/}
+echo ${arr[@]/*[aA]*/} # array substitution remove words with a|A
+echo ${ary[@]/[A-Z]/.} # cap to "."
+${#ArrayName[@]} # array length
+${!ArrayName[@]} # array indexes
+finalArr=(${arr[@]} ${arr[@]} ${arr[@]})
+
 echo $someString| cut -c3,4
 echo $someString| cut -c1-7
 IFS="" && echo $sentence | cut -f1-3
