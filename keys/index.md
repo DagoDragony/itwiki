@@ -392,3 +392,13 @@ iptables-save                                                       # list rules
 iptables -I INPUT 5 -p tcp -m state --state NEW -m tcp --dport 23 -j ACCEPT; iptables-save
 
 ```
+
+## Tmux
+
+```
+Ctrl-B : setw synchronize-panes on
+Ctrl-B " Split horizontally
+Ctrl-B % Split vertically
+Ctrl-B <arrow> move through panes
+```
+
