@@ -76,5 +76,6 @@ awk '{ if($1 ~ /123/) print } test.txt
 awk '{ if($1 ~ /[0-9]/) print } test.txt
 awk '{ if($2 == "" || $3 == "" || $4 == "" ) print "Not all scores are available for "$1 }'
 awk '{ if($2 < 50 || $3 < 50 || $4 < 50) print $1" : Fail"; else print $1" : Pass" }'
+awk '{ if(NR%2 == 0) printf $0"\n" }'
 ```
 
