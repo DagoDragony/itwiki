@@ -68,6 +68,10 @@ grep -iwE 'th(e|at|en|ose)'
 sed -e 's/\<the\>/this/' # change word the to this
 sed 's/\(thy\)/{\1}/gI' # case insensitive global thy wrap
 
-
+awk '{ print $1,$2 }' test.txt
+awk '/test/ { print $1 }' test.txt # return only lines containing test
+awk '/^[a-z]/ { print } test.txt
+awk '{ if($1 ~ /123/) print } test.txt
+awk '{ if($1 ~ /[0-9]/) print } test.txt
 ```
 
