@@ -14,6 +14,7 @@ echo ${ary[@]/[A-Z]/.} # cap to "."
 ${#ArrayName[@]} # array length
 ${!ArrayName[@]} # array indexes
 finalArr=(${arr[@]} ${arr[@]} ${arr[@]})
+printf '%s\n' "${arr[@]}" | sort | uniq -u # print array into separate lines for other commands
 
 echo $someString| cut -c3,4
 echo $someString| cut -c1-7
@@ -73,5 +74,7 @@ awk '/test/ { print $1 }' test.txt # return only lines containing test
 awk '/^[a-z]/ { print } test.txt
 awk '{ if($1 ~ /123/) print } test.txt
 awk '{ if($1 ~ /[0-9]/) print } test.txt
+awk '{ if($2 == "" || $3 == "" || $4 == "" ) print "Not all scores are available for "$1 }'
+awk '{ if($2 < 50 || $3 < 50 || $4 < 50) print $1" : Fail"; else print $1" : Pass" }'
 ```
 
