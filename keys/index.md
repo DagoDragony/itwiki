@@ -319,6 +319,8 @@ xrdb -merge ~/.Xresources # load Xresources and merge with current
 xrdb -query -all # see default settins for your X11 apps
 
 scanimage --format=png --output-file Invoice_200_1.png --progress
+
+scp /file/tosend username@remote:/where/to/put
 ```
 
 ## Sbt
@@ -401,4 +403,3 @@ Ctrl-B " Split horizontally
 Ctrl-B % Split vertically
 Ctrl-B <arrow> move through panes
 ```
-
