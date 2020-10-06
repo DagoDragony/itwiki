@@ -139,6 +139,8 @@ yay -Yc                                                             # removes un
 yay -Ps                                                             # print package information summary
 yay -Syu                                                            # like pacman + updates AUR packages
 
+yum list installed
+
 cat * | grep -v "^$"                                                # exclude lines which start with dollar sign
 coproc (zathura "$booksFolder/$1 &)                                 # for running commmand as separate process
 
