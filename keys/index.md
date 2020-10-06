@@ -140,6 +140,7 @@ yay -Ps                                                             # print pack
 yay -Syu                                                            # like pacman + updates AUR packages
 
 yum list installed
+yum install <pkg_name>
 
 cat * | grep -v "^$"                                                # exclude lines which start with dollar sign
 coproc (zathura "$booksFolder/$1 &)                                 # for running commmand as separate process
