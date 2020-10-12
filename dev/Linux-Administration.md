@@ -45,22 +45,6 @@ PR = 20 + NI
   overloaded or just very busy
 * See there is no swap and that it's plenty of RAM left to use
 
-## Interprocess communication
-
-Pipe
-```
-# in console1
-mkfifo mypipe
-
-# in console2
-lsblk -i > mypipe
-# in stops until it is read
-
-# in console1
-cat mypipe
-# console 2 releases command
-```
-
 ## Processes
 
 CFS (Completeley Fair Scheduler) - determines which processor gets CPU time
