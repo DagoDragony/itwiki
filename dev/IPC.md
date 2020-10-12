@@ -15,3 +15,20 @@ Daemon for devices
   probability of actually existing on the host
 * Assigns names to devices when they are plugged. udev treats all devices as plug & play
   even on boot. udev moves device naming out of kernel space into user space
+  
+
+## Pipe
+
+```
+# in console1
+mkfifo mypipe
+
+# in console2
+lsblk -i > mypipe
+# in stops until it is read
+
+# in console1
+cat mypipe
+# console 2 releases command
+```
+
