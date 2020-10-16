@@ -7,6 +7,7 @@
 [atop](atop)
 [glances](glances)
 [scala](scala)
+[vifm](vifm)
 
 ## Hotkeys
 
