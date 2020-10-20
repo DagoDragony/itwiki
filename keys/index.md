@@ -8,6 +8,7 @@
 [glances](glances)
 [scala](scala)
 [vifm](vifm)
+[tmux](tmux)
 
 ## Hotkeys
 
