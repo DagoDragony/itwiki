@@ -51,7 +51,8 @@ print -z "stsdth       # puts argument onto the editing buffer stack
 
 ```
 journalctl _COMM=<tab>
-journalctl -t kernel
+journalctl -t kernel # filter by SYSLOG_IDENTIFIER
+journalctl -u sshd # filter by systemd unit
 journalctl -p2 # show messages critical and worse
 journalctl --list-boots
 journalctl -S 01:00:00 -U 01:10:05 # show since until, can be with full dates
