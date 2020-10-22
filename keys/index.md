@@ -50,7 +50,9 @@ print -z "stsdth       # puts argument onto the editing buffer stack
 ## Systemd
 
 ```
+journalctl -fe | grep servers
 journalctl _COMM=<tab>
+journalctl -o json-pretty # see journalctl field names
 journalctl -t kernel # filter by SYSLOG_IDENTIFIER
 journalctl -u sshd # filter by systemd unit
 journalctl -p2 # show messages critical and worse
