@@ -177,6 +177,9 @@ tty                                                                 # print devi
 /etc/passwd
 /etc/shadow                                                         # passwd moved to shadow, it's safer as it can be read only by root
 openssl passwd -6 mypassword
+smbpasswd -r adform.com -U $AD_USERNAME_WITHOUT_@adform.com # change password
+passwd someUser # change password for someUser
+
 pwgen                                                               # password generator
 /etc/group
 /etc/login.defs                                                     # configuration for new users
