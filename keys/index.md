@@ -325,6 +325,9 @@ lastb                                                               # all bad lo
 
 sxiv -t *.jpg                                                       # thumbnail
 ls *.jpg | sxiv -tio                                                # use it to select images and get selected imgs list
+f # sxiv full screen
+space # sxiv image forward
+backspace # sxiv image backwards
 
 xrdb -merge ~/.Xresources # load Xresources and merge with current
 xrdb -query -all # see default settins for your X11 apps
