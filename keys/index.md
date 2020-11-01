@@ -9,6 +9,7 @@
 [scala](scala)
 [vifm](vifm)
 [tmux](tmux)
+[blender](blender)
 
 ## Hotkeys
 
