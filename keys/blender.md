@@ -3,6 +3,8 @@ Blender
 # Hello world
 
 Shift+a - add
+g - move
+s - scale
 
 {{file:~/.config/variety/Favorites/Road.jpg}}
 
