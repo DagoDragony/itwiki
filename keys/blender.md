@@ -3,5 +3,16 @@ Blender
 # Hello world
 
 {{file:~/.config/variety/Favorites/Road.jpg}}
-![alt text](~/.config/variety/Favorites/Road.jpg "Logo Title Text 1")
+
+![alt text](./test.png "Logo Title Text 1")
+
+![Some Text](./test.png)
+
+![Some Text](./test.png)
+
+<img src="sea.jpg"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" />
  
+ 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
