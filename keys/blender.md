@@ -19,6 +19,9 @@ shift + c - reset cursor
 tab - edit/object mode
 1, 2, 3 - vertex, edge, face
 f - create face
+e - extrude
+
+alt + z - xray toogle
 
 {{file:~/.config/variety/Favorites/Road.jpg}}
 
