@@ -23,9 +23,14 @@ e - extrude
 
 alt + z - xray toogle
 
-{{file:~/.config/variety/Favorites/Road.jpg}}
+m - move to collection
 
-![alt text](./test.png "Logo Title Text 1")
+![alt text](/home/dago/.config/variety/Favorites/Road.jpg "Logo Title Text 1")
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+
+![alt text](/home/dago/.config/variety/Favorites/Road.jpg)
 
 ![Some Text](./test.png)
 
