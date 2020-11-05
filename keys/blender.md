@@ -16,6 +16,11 @@ f - create face
 
 e - extrude
 ctrl + right mouse click - extrude to mouse 
+
+ctrl + r - loop cut (possible with scroll wheel)
+
+ctrl + b - bevel (rounding edges and vertex)
+ctrl + shift + b - vertex bevel
 ```
 
 **Options**
