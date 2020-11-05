@@ -33,3 +33,8 @@ alt + z - xray toogle
 
 m - move to collection
 ```
+
+```
+ctrl + j - join object into one mesh
+```
+
