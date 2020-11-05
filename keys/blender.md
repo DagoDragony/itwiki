@@ -1,45 +1,35 @@
 Blender
 
-# Hello world
+**Pop**
 
+```
 Shift+a - add
+xd - delete
+
 g - move
 s - scale
 r + [x/y/z]- rotate
 
+tab - edit/object mode
+1, 2, 3 - vertex, edge, face
+f - create face
+
+e - extrude
+ctrl + right mouse click - extrude to mouse 
+```
+
+**Options**
+
+```
 shift + d - duplicate
 
 t - toolbar window
 n - properties window
+```
 
-d - delete
-
+```
 shift + c - reset cursor
-
-tab - edit/object mode
-1, 2, 3 - vertex, edge, face
-f - create face
-e - extrude
-
 alt + z - xray toogle
 
 m - move to collection
-
-![alt text](/home/dago/.config/variety/Favorites/Road.jpg "Logo Title Text 1")
-![alt text][logo]
-
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
-
-![alt text](/home/dago/.config/variety/Favorites/Road.jpg)
-
-![Some Text](./test.png)
-
-![Some Text](./test.png)
-
-<img src="sea.jpg"
-     alt="Markdown Monster icon"
-     style="float: left; margin-right: 10px;" />
- 
- 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-![dfasd](https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg)
+```

@@ -275,7 +275,7 @@ chmod 640 file0[4-7]
 chmod g+rx,g-w file1, file2
 
 groupadd -g 5000 dev                                                # works only after log out
-usermod -G 5000 [student](student)                                  # works only after log out
+usermod -G 5000 student                                  # works only after log out
 gpasswd -M student,student1 dev                                     # works only after log out
 tail /etc/group
 
