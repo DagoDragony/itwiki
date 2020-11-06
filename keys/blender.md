@@ -18,6 +18,7 @@ e - extrude
 ctrl + right mouse click - extrude to mouse 
 
 ctrl + r - loop cut (possible with scroll wheel)
+k - knife tool
 
 ctrl + b - bevel (rounding edges and vertex)
 ctrl + shift + b - vertex bevel
