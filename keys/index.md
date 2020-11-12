@@ -9,6 +9,7 @@
 [scala](scala)
 [vifm](vifm)
 [tmux](tmux)
+[kubernetes](kubernetes)
 [blender](blender)
 
 ## Hotkeys
@@ -373,6 +374,10 @@ git reset                  # unstage all staged files
 git add ^t                 # fzf autocomplete
 git restore <file>...      # restore/undo changes in file
 git merge master
+git describe --tags
+git push origin --tags     # push all tags to origin
+git push origin v1.5       # push only specified tag to origin
+git fetch --all
 ```
 
 ## Network
