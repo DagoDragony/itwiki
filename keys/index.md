@@ -367,16 +367,17 @@ sbt "runMain org.may.path"
 
 ```
 git status
-git add -a -m "commit msg" # add all and commit
+git add -a -m "commit msg"       # add all and commit
 git checkout -b "new branch name"
 git push origin branchName
-git reset                  # unstage all staged files
-git add ^t                 # fzf autocomplete
-git restore <file>...      # restore/undo changes in file
+git reset                        # unstage all staged files
+git add ^t                       # fzf autocomplete
+git restore <file>...            # restore/undo changes in file
 git merge master
 git describe --tags
-git push origin --tags     # push all tags to origin
-git push origin v1.5       # push only specified tag to origin
+git push origin --tags           # push all tags to origin
+git push origin v1.5             # push only specified tag to origin
+git push --delete origin tagname # delete tag
 git fetch --all
 ```
 
