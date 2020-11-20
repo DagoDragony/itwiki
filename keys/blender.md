@@ -22,6 +22,8 @@ k - knife tool
 
 ctrl + b - bevel (rounding edges and vertex)
 ctrl + shift + b - vertex bevel
+
+f - connect 2 vertices
 ```
 
 **Options**
