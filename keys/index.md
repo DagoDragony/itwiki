@@ -126,19 +126,19 @@ xclip -sel clip id_rsa.pub                                          # copy file 
 
 ln -s <pathToFile> <pathToLink>                                     # create soft link
 
-pacman -Ql package_name                                             # list files belonging to package
-pacman -Qi                                                          # show installed packagies
-pacman -Qi package_name                                             # show package info including what depends on package and it's dependencies
-pacman -Qe                                                          # show only programs that you explicitly installed
-pacman -Qdt                                                         # orphan dependencies
-pacman -Qo file                                                     # find to which package file belongs
-pacman -Syu                                                         # download fresh copy of master package database and upgrade every package #maintenance
-pacman -Sii                                                         # rever dependencies #
-pacman -Si                                                          # dependencies of remote packages
-pacman -Sc                                                          # remove cache of old packages #maintenance
-pacman -u file.tar.gz                                               # install from package
-pacman -Rns <package_name>                                          # remove package with dependencies if they are not used elsewhere
-pacman -Rdd <package_name>                                          # remove package, ignoring it's dependencies
+yay -Ql package_name                                             # list files belonging to package
+yay -Qi                                                          # show installed packagies
+yay -Qi package_name                                             # show package info including what depends on package and it's dependencies
+yay -Qe                                                          # show only programs that you explicitly installed
+yay -Qdt                                                         # orphan dependencies
+yay -Qo file                                                     # find to which package file belongs
+yay -Syu                                                         # download fresh copy of master package database and upgrade every package #maintenance
+yay -Sii                                                         # rever dependencies #
+yay -Si                                                          # dependencies of remote packages
+yay -Sc                                                          # remove cache of old packages #maintenance
+yay -U /var/cache/pacman/pkg/kdiff3-1.8.4-1-x86_64.pkg.tar.zst   # install old package version from file or downgrade package
+yay -Rns <package_name>                                          # remove package with dependencies if they are not used elsewhere
+yay -Rdd <package_name>                                          # remove package, ignoring it's dependencies
 yay -Si xmonad                                                      # show extensive info about package
 yay -Sua                                                            # update AUR packages
 yay -Pu                                                             # give updatable packages
