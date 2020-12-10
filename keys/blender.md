@@ -47,3 +47,8 @@ ctrl + j - join object into one mesh
 p - separate to mesh
 ```
 
+**Modifiers** 
+```
+
+```
+
