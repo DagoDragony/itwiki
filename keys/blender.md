@@ -49,6 +49,6 @@ p - separate to mesh
 
 **Modifiers** 
 ```
-
+Snap (Magnet)
 ```
 
