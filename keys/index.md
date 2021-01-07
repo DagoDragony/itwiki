@@ -115,6 +115,8 @@ atrm <jobNmb>                                  # remove job
 ## Various
 
 ```
+history 1 # show all history from first entry
+
 rclone lsd remote: # list directories in top level
 rclone ls gdrive: # list all the files in your drive
 rclone copy /home/source remote:backup
