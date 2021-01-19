@@ -11,6 +11,7 @@
 [tmux](tmux)
 [kubernetes](kubernetes)
 [blender](blender)
+[promQL](promQL)
 
 ## Hotkeys
 
