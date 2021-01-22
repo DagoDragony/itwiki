@@ -12,5 +12,6 @@ kubectl edit deployment task0
 kubectl edit configmaps
 kubectl edit service task2
 
+kubectl get pods | grep mstapi |  awk '{print $1}' | xargs -I % sh -c "kubectl logs --since=1h % mstapi" # get 1h errors
 ```
 
