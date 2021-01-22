@@ -299,6 +299,7 @@ dmesg | tail | grep -i sd                                           # kernel rin
 
 dd -if=/dev/sda of=/tmp/myMBR.bak bs=512 count=1                    # backup MBR
 dd if=/tmp/myMBR.bak of=/dev/sda                                    # restore mbr record
+dd if=/home/dago/Downloads/archlinux-2021.01.01-x86_64.iso of=/dev/sdb bs=512 status=progress # make bootable disk
 
 ssh root@myHost
 ssh -L 80:intra.example.com:80 gw.example.com                       # local port forward
