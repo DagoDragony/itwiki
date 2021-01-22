@@ -1,6 +1,7 @@
 # Key bindings
 
 [i3](i3)
+[bash](bash)
 [Vimwiki](Vimwiki)
 [Vim](Vim)
 [Top](Top)
