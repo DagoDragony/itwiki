@@ -166,6 +166,7 @@ ls | column
 ls -t                                                               # sort by time
 mv -t <dir> file1 file2 file4*.txt                                  # move multiple files
 someArray=("my" "array" "values") # bash array
+$((1+2)) # bash add integers
 
 grep -iRl "lenovo" ./ # find text in all files
 find . -type f -empty ! -name "*test.file*"                         # ! inverts name filter
@@ -384,7 +385,8 @@ git merge master
 git describe --tags
 git push origin --tags           # push all tags to origin
 git push origin v1.5             # push only specified tag to origin
-git push --delete origin tagname # delete tag
+git tag -d <tagName> # delete local tag
+git push --delete origin <tagName> # delete tag
 git fetch --all
 git commit -m "retrigger checks" --allow-empty
 ```
