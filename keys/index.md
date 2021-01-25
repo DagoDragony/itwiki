@@ -385,6 +385,7 @@ git push origin --tags           # push all tags to origin
 git push origin v1.5             # push only specified tag to origin
 git push --delete origin tagname # delete tag
 git fetch --all
+git commit -m "retrigger checks" --allow-empty
 ```
 
 ## Network
