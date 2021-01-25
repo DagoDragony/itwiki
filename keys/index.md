@@ -165,6 +165,7 @@ ls *[0-9][a-fgh][!m-o]*
 ls | column
 ls -t                                                               # sort by time
 mv -t <dir> file1 file2 file4*.txt                                  # move multiple files
+someArray=("my" "array" "values") # bash array
 
 grep -iRl "lenovo" ./ # find text in all files
 find . -type f -empty ! -name "*test.file*"                         # ! inverts name filter
