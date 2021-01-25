@@ -149,6 +149,7 @@ yay -Pu                                                             # give updat
 yay -Yc                                                             # removes uneeded dependencies #maintenance
 yay -Ps                                                             # print package information summary
 yay -Syu                                                            # like pacman + updates AUR packages
+yay -Qua # show what packages are installed and are updatable
 
 yum list installed
 yum install <pkg_name>
