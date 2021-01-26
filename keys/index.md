@@ -446,5 +446,6 @@ Ctrl-B <arrow> move through panes
 
 ```
 scriptName=$(basename $0)
+die() { echo >&2 "$@" ; exit 1 ; }
 ```
 
