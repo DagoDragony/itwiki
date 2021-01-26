@@ -169,6 +169,11 @@ mv -t <dir> file1 file2 file4*.txt                                  # move multi
 someArray=("my" "array" "values") # bash array
 $((1+2)) # bash add integers
 
+error.sh 1> capture.txt 2> error.txt # stdout to on file, stdin to other
+error.sh > capture.txt 2>&1 # stderr & stdout to same file
+error.sh 2>&1 # stderr to stdout
+error.sh 1>%2 # stdout to stderr
+
 grep -iRl "lenovo" ./ # find text in all files
 find . -type f -empty ! -name "*test.file*"                         # ! inverts name filter
 find / -type f -links 4                                             # find all files with 4 harldinks
@@ -436,3 +441,10 @@ Ctrl-B " Split horizontally
 Ctrl-B % Split vertically
 Ctrl-B <arrow> move through panes
 ```
+
+## Snippets
+
+```
+scriptName=$(basename $0)
+```
+
