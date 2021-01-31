@@ -13,6 +13,7 @@
 [kubernetes](kubernetes)
 [blender](blender)
 [promQL](promQL)
+[vagrant](vagrant)
 
 ## Hotkeys
 
@@ -461,4 +462,5 @@ confirm() {
     esac
 }
 ```
+
 
