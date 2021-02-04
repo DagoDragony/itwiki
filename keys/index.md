@@ -14,6 +14,7 @@
 [blender](blender)
 [promQL](promQL)
 [vagrant](vagrant)
+[aerospike](aerospike)
 
 ## Hotkeys
 
