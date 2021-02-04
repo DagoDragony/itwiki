@@ -370,6 +370,9 @@ sbt "show fullResolvers" # show all resolvers of project
 
 sbt "runMain org.may.path"
 sbt "inspect tree dist"
+
+sbt ";reload plugins"
+sbt dependecyUpdates # get possible updates for project
 ```
 
 ## Zathura
