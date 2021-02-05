@@ -17,3 +17,13 @@ Set settings for remote app
 ```
 
 
+# Linux application profiling
+
+## Pef_events (aka "perf", aka PCl - Performance Counter for Linux) 
+
+Standard linux profiler, can sample stacks of (almost) everything on CPU
+Many event sources
+* Timer-based sampling
+* Hardware events
+* Tracepoints
+* Dynamic tracing
