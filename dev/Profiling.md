@@ -21,9 +21,20 @@ Set settings for remote app
 
 ## Pef_events (aka "perf", aka PCl - Performance Counter for Linux) 
 
+
+```
+# needs to run with root/sudo
+perf record -F 99 -ag -- sleep 30 # creates perf.data file
+perf report
+
+```
+
+
 Standard linux profiler, can sample stacks of (almost) everything on CPU
 Many event sources
 * Timer-based sampling
 * Hardware events
 * Tracepoints
 * Dynamic tracing
+
+## ftrace
