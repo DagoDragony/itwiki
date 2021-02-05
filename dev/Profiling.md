@@ -20,12 +20,23 @@ Set settings for remote app
 # Linux application profiling
 
 ## Pef_events (aka "perf", aka PCl - Performance Counter for Linux) 
-
+http://www.brendangregg.com/perf.html
 
 ```
 # needs to run with root/sudo
+
+perf list # listing all currently known events
+perf list 'sched:*'
+
 perf record -F 99 -ag -- sleep 30 # creates perf.data file
-perf report
+perf record -F 99 -p <PID>
+perf record -e block:block_rq_issue -ag # tracing I/O, stop Ctrl+C
+
+
+
+perf report # show perf.data in an ncurses browser (TUI) if possible
+perf script # list all events from perf.data
+perf annotate --stdio # disassemble and annotate instructions with percentages
 
 ```
 
