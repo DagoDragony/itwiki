@@ -15,6 +15,7 @@
 [promQL](promQL)
 [vagrant](vagrant)
 [aerospike](aerospike)
+[profiling](profiling)
 
 ## Hotkeys
 
