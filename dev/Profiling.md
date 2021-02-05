@@ -46,6 +46,7 @@ perf annotate --stdio # disassemble and annotate instructions with percentages
 # -e <event> list of syscalls and other perf events
 # -p pid
 # -t tid
+# -g enables stack traces, mandatory for flame graphs
 ```
 
 
