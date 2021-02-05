@@ -32,6 +32,7 @@ perf record -F 99 -ag -- sleep 30 # creates perf.data file
 perf record -F 99 -p <PID>
 perf record -e block:block_rq_issue -ag # tracing I/O, stop Ctrl+C
 
+perf stat ls # get statistics on ls command
 
 
 perf report # show perf.data in an ncurses browser (TUI) if possible
