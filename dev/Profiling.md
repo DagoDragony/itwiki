@@ -33,12 +33,19 @@ perf record -F 99 -p <PID>
 perf record -e block:block_rq_issue -ag # tracing I/O, stop Ctrl+C
 
 perf stat ls # get statistics on ls command
+perf stat -e cs # get statistics on context switches
 
+perf trace ls # trace 
 
 perf report # show perf.data in an ncurses browser (TUI) if possible
 perf script # list all events from perf.data
 perf annotate --stdio # disassemble and annotate instructions with percentages
 
+# common options
+# -a all cpus
+# -e <event> list of syscalls and other perf events
+# -p pid
+# -t tid
 ```
 
 
