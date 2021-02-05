@@ -48,4 +48,17 @@ Many event sources
 * Tracepoints
 * Dynamic tracing
 
+
+### Requirements
+
+* Linux
+* Oracle/OpenJdk(1.8u60+) + latest Zing
+* -XX:+PreserveFramePointer -> Walk the stack
+* Recommended for extra precision for inlined methods
+	* -XX:+UnlockDiagnosticVMOptions
+	* -XX:+DebugNonSafepoints
+* Need permissions/some Linux fu 
+* Need perf-map-agent (build your own)
+* perf
+
 ## ftrace
