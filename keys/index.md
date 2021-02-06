@@ -16,6 +16,7 @@
 [vagrant](vagrant)
 [aerospike](aerospike)
 [profiling](profiling)
+[mime](mime)
 
 ## Hotkeys
 
