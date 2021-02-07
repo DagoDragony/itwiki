@@ -403,6 +403,7 @@ git tag -d <tagName> # delete local tag
 git push --delete origin <tagName> # delete tag
 git fetch --all
 git commit -m "retrigger checks" --allow-empty
+git update-index --chmod=+x myExecutableFile # set execution rights in git
 ```
 
 ## Network
