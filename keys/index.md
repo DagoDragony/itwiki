@@ -377,6 +377,10 @@ sbt "inspect tree dist"
 
 sbt ";reload plugins"
 sbt dependecyUpdates # get possible updates for project
+
+sbt projects
+sbt project
+sbt project <projectId> # set this project to different one
 ```
 
 ## Zathura
