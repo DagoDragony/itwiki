@@ -378,9 +378,15 @@ sbt "inspect tree dist"
 sbt ";reload plugins"
 sbt dependecyUpdates # get possible updates for project
 
+sbt help # get help
+sbt help project # get help on projec
 sbt projects
 sbt project
 sbt project <projectId> # set this project to different one
+
+sbt tasks # list tasks
+sbt settings # list settings
+sbt show <setting/task name> # show setting name
 ```
 
 ## Zathura
