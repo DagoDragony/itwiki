@@ -377,6 +377,7 @@ sbt "inspect tree dist"
 
 sbt ";reload plugins"
 sbt dependecyUpdates # get possible updates for project
+sbt "reload plugins; dependencyUpdates" # get possible plugin updates
 
 sbt help # get help
 sbt help project # get help on projec
