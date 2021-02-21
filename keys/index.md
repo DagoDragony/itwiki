@@ -171,6 +171,7 @@ ls | column
 ls -t                                                               # sort by time
 mv -t <dir> file1 file2 file4*.txt                                  # move multiple files
 someArray=("my" "array" "values") # bash array
+joinArray=("${arr1[@]}" "${arr2[@]}") # join two arrays
 $((1+2)) # bash add integers
 
 error.sh 1> capture.txt 2> error.txt # stdout to on file, stdin to other
