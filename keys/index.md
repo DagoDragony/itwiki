@@ -190,9 +190,9 @@ find . -printf "%T@ %Tc %p\n" | sort -n
 find {$dir1,$dir2} -type f -exec grep -Iq . {} \; -print # read from multiple directories, filter out binary files
 
 w                                                                   # show logged users and what are they doing
-who                                                                 #
+who                                                                 # shows currently logged users
 whoami                                                              # current user
-id
+id # show user id
 tty                                                                 # print device of terminal
 /etc/passwd
 /etc/shadow                                                         # passwd moved to shadow, it's safer as it can be read only by root
@@ -218,7 +218,7 @@ cat test.pdf > /dev/usb/lp0                                         # print dire
 
 lscpu
 lsblk
-df -h
+df -h # show available space
 du -sh * | sort -h
 du -sh .[^.]* | sort -h # summarized sizes including hidden files
 dumpe2fs /dev/sda1                                                  # lots of deep info about filesystem (cylinder group info, inodes, blocks etc
@@ -248,12 +248,12 @@ htop
 glances
 iotop
 ps
-free
+free -h
 vmstat
 iostat -j ID 
 
-                                                                    # results can be questionable - inacurate or wrong because, because hardware vendors not always cooperates
-lshw
+lshw # results can be questionable - inacurate or wrong because, because hardware vendors not always cooperates
+hwinfo --short | less # hardware info
 dmidecode -t 2                                                      # DMI(Desktop Managment Interface)system's hardware components description, uses SMBIOS info(data collection performed by BIOS)
 lsusb -v | less
 lsusb -t                                                            # tree
