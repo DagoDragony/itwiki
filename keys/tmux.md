@@ -27,7 +27,6 @@ C-b " # splits vertically
 
 :setw synchronise-panes # apply to all group
 
-:kill-server
-
+tmux kill-server
 ```
 

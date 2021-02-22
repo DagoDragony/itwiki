@@ -151,7 +151,7 @@ yay -Si xmonad                                                      # show exten
 yay -Sua                                                            # update AUR packages
 yay -Pu                                                             # give updatable packages
 yay -Yc                                                             # removes uneeded dependencies #maintenance
-yay -Ps                                                             # print package information summary
+yay -Ps                                                             # print package information summary #maintenance
 yay -Syu                                                            # like pacman + updates AUR packages
 yay -Qua # show what packages are installed and are updatable
 
