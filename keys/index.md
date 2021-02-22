@@ -140,7 +140,7 @@ yay -Qi package_name                                             # show package 
 yay -Qe                                                          # show only programs that you explicitly installed
 yay -Qdt                                                         # orphan dependencies
 yay -Qo file                                                     # find to which package file belongs
-yay -Syu                                                         # download fresh copy of master package database and upgrade every package #maintenance
+yay -Syyu --noconfirm --needed                                                        # download fresh copy of master package database and upgrade every package #maintenance
 yay -Sii                                                         # rever dependencies #
 yay -Si                                                          # dependencies of remote packages
 yay -Sc                                                          # remove cache of old packages #maintenance
