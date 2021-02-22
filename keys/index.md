@@ -193,6 +193,7 @@ w                                                                   # show logge
 who                                                                 # shows currently logged users
 whoami                                                              # current user
 id # show user id
+uptime
 tty                                                                 # print device of terminal
 /etc/passwd
 /etc/shadow                                                         # passwd moved to shadow, it's safer as it can be read only by root
