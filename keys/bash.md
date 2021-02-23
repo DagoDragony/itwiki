@@ -10,12 +10,13 @@ set -u # when undefined variable is used script breaks
 
 set -o pipefail # specific to bash
 
-hasflag() {
+someFun() {
 	local flag=${1} # mandatory variable, script with flags will fail
 	local flag2=${1:-} # optional variable
 }
 
 bash -x <command> # print what was executed
 
+https://github.com/sstephenson/bats # for testing bash scripts
 ```
 
