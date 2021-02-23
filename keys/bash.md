@@ -15,5 +15,7 @@ hasflag() {
 	local flag2=${1:-} # optional variable
 }
 
+bash -x <command> # print what was executed
+
 ```
 
