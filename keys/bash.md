@@ -10,5 +10,10 @@ set -u # when undefined variable is used script breaks
 
 set -o pipefail # specific to bash
 
+hasflag() {
+	local flag=${1} # mandatory variable, script with flags will fail
+	local flag2=${1:-} # optional variable
+}
+
 ```
 
