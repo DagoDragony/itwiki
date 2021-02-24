@@ -29,5 +29,6 @@
 [Docker](Docker)
 [Various](Various)
 [Profiling](Profiling)
+[Idea](Idea)
 
 `/proc` and `/sys` exists only in ram

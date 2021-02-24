@@ -143,6 +143,13 @@ zw  " remove current word from spell file
 zug " revert zg or zw command for current word
 ```
 
+## Format code
+
+```
+gg=G # reindent file
+```
+
+
 ## Various
 
 ```
