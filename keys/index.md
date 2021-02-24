@@ -360,6 +360,8 @@ xrdb -query -all # see default settins for your X11 apps
 scanimage --format=png --output-file Invoice_200_1.png --progress
 
 scp /file/tosend username@remote:/where/to/put
+
+ctrl+/ # get slack hotkeys
 ```
 
 ## Sbt
