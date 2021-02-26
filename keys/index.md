@@ -344,6 +344,7 @@ chattr
 curl wttr.in                                                        # get cool looking weather forecast in console
 curl <someUrlWithJson> | jq '.' # get reformated json
 cat joinBackup | jq '.partitionDelays | .. | .lastConsumedItemTime?' | sort
+cat someXmlFile | xq # convert to json 
 
 last                                                                # show a listing of last logged in users
 lastb                                                               # all bad login attempts
