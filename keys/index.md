@@ -344,6 +344,8 @@ chattr
 curl wttr.in                                                        # get cool looking weather forecast in console
 curl <someUrlWithJson> | jq '.' # get reformated json
 cat joinBackup | jq '.partitionDelays | .. | .lastConsumedItemTime?' | sort
+jq -s '.[0] as $a | .[1] as $b | $a * $b | .prices = $a.prices + $b.prices' product1.json product2.json | unique # join two different json files
+jq -s 'reduce .[] as $item({}; . * $item)' prouct1.json prouct2.json
 cat someXmlFile | xq # convert to json 
 
 last                                                                # show a listing of last logged in users
