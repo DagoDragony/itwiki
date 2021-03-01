@@ -262,6 +262,8 @@ lsusb -t                                                            # tree
 usb-devices                                                         # same as lsusb but more
 lspci -v | less
 
+xev # print contents of X events
+
 bc                                                                  # calculator
 
 
