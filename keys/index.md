@@ -17,6 +17,7 @@
 [aerospike](aerospike)
 [profiling](profiling)
 [mime](mime)
+[intellij](intellij)
 
 ## Hotkeys
 
