@@ -15,3 +15,5 @@ Ctrl+Alt+N # inline
 
 Alt+1 # open project view
 Ctrl+Shift+<arrow> # resize window
+
+Alt+F1 -> Enter # get current file location in jar
