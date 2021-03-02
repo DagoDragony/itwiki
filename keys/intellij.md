@@ -12,3 +12,6 @@ Ctrl+Shift+F12 # Hide all windows
 Ctrl+F6 # change parameter order, Alt+Up/Down to change marked parameter order
 
 Ctrl+Alt+N # inline
+
+Alt+1 # open project view
+Ctrl+Shift+<arrow> # resize window
