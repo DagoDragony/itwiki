@@ -178,7 +178,7 @@ $((1+2)) # bash add integers
 error.sh 1> capture.txt 2> error.txt # stdout to on file, stdin to other
 error.sh > capture.txt 2>&1 # stderr & stdout to same file
 error.sh 2>&1 # stderr to stdout
-error.sh 1>%2 # stdout to stderr
+error.sh 1>&2 # stdout to stderr
 
 grep -iRl "lenovo" ./ # find text in all files
 find . -type f -empty ! -name "*test.file*"                         # ! inverts name filter
