@@ -216,7 +216,7 @@ echo "hello" > /dev/pts/2                                           # send messa
 
 cat test.pdf > /dev/usb/lp0                                         # print directly to printer device
 
-lscpu
+lscpu # get cpu info, cpu architecture etc
 lsblk
 df -h # show available space
 du -sh * | sort -h
