@@ -27,7 +27,6 @@ xmodmap                           # displays and edits keyboard modifier map
 less /usr/include/X11/keysymdef.h # xorg key codes
 ```
 
-
 ## Manual, Investigation
 
 ```
@@ -36,7 +35,6 @@ help           # bash internals
 whence -wm '*' # zsh shows what shell knows - commands, functions, reserved words..
 type for       # check what type is keyword
 ```
-
 
 ## Fzf
 
