@@ -13,5 +13,7 @@ kubectl edit configmaps
 kubectl edit service task2
 
 kubectl get pods | grep mstapi |  awk '{print $1}' | xargs -I % sh -c "kubectl logs --since=1h % mstapi" # get 1h errors
+kubectl top pods | sort -rk2 # get resource usage
+kubectl top pods | sort -rk2 | grep --color -E 'b6tkm|$' # highlight searched line
 ```
 
