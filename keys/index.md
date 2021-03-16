@@ -25,6 +25,11 @@
 sudo showkey                      # print pressed key number
 xmodmap                           # displays and edits keyboard modifier map
 less /usr/include/X11/keysymdef.h # xorg key codes
+less # shift+f follow current file
+less # ctrl+c stop less following
+
+!$ # last command last argument
+!* # last command all args
 ```
 
 ## Manual, Investigation
@@ -159,6 +164,8 @@ yum install <pkg_name>
 
 cat * | grep -v "^$"                                                # exclude lines which start with dollar sign
 coproc (zathura "$booksFolder/$1 &)                                 # for running commmand as separate process
+
+^x^e # edit current command line in default editor
 
 echo "sth\nhello\n" | tr '\n' ' '                                   # translate(replace) all new lines with spaces
 echo b{ed,olt,ar}                                                   # beds bolts bars
