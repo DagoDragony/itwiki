@@ -1,4 +1,4 @@
-# Key bindings
+[#](#) Key bindings
 
 [i3](i3)
 [bash](bash)
@@ -378,6 +378,21 @@ ctrl+/ # get slack hotkeys
 ## Sbt
 
 ```
+sbt help # get help
+sbt help <command> # get help on <command>
+sbt !: # get command history
+
+sbt project[s]
+sbt tasks [-v[v]]|[-V] # list tasks
+sbt settings # list settings
+sbt show <setting/task name> # show setting value/run task and see return value
+
+sbt project <projectId> # set this project to different one
+
+sbt package # creates jar
+sbt dist # creates zip
+sbt Docker/publishLocal # publish application in docker, then docker run <imageName>
+
 sbt "whatDependsOn com.adform.dp storm-commons-core" | less -R
 sbt provided:dependencyBrowseGraph # not test only dependencyes and no provided ones
 sbt test:dependencyBrowseGraph
@@ -394,15 +409,6 @@ sbt ";reload plugins"
 sbt dependecyUpdates # get possible updates for project
 sbt "reload plugins; dependencyUpdates" # get possible plugin updates
 
-sbt help # get help
-sbt help project # get help on projec
-sbt projects
-sbt project
-sbt project <projectId> # set this project to different one
-
-sbt tasks # list tasks
-sbt settings # list settings
-sbt show <setting/task name> # show setting name
 ```
 
 ## Zathura
