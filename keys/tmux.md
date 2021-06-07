@@ -29,6 +29,8 @@ tmux attach -tmyssession
 C-b % # splits into to horizontal panels
 C-b " # splits vertically
 
+C-b d # detach session
+
 :setw synchronise-panes # apply to all group
 
 tmux kill-server
